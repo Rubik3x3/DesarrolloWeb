@@ -8,22 +8,36 @@
 <body>
 	<h1 style="text-align:center;">Formularios</h1>
 	<form action="">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre">
+		<fieldset>
+			<legend>Datos Personales</legend>
+			<input type="text" name="nombre" placeholder="Nombre">
+			<br>
+			<input type="text" name="apellido" placeholder="Apellido">
+			<br>
+			<label for="genero">Género</label>
+			<br>
+			<label for="genero">Hombre:</label>
+			<input type="radio" name="genero" value="hombre">
+			<label for="genero">Mujer:</label>
+			<input type="radio" name="genero" value="mujer">
+			<label for="genero">Otro:</label>
+			<input type="radio" name="genero" value="otro">
+		</fieldset>
 		<br>
-		<label for="apellido">Apellido:</label>
-		<input type="text" name="apellido">
+		<label for="animal">Animal favorito:</label>
+		<select name="animal" id="">
+			<option value="Leon">Leon</option>
+			<option value="Elefante">Elefante</option>
+			<option value="Jirafa">Jirafa</option>
+			<option value="Gato">Gato</option>
+		</select>
 		<br>
-		<label for="genero">Género</label>
+		<label for="motivo">Motivo:</label>
 		<br>
-		<label for="genero">Hombre:</label>
-		<input type="radio" name="genero" value="hombre">
+		<textarea name="motivo" id="" cols="30" rows="10"></textarea>
 		<br>
-		<label for="genero">Mujer:</label>
-		<input type="radio" name="genero" value="mujer">
-		<br>
-		<label for="genero">Otro:</label>
-		<input type="radio" name="genero" value="otro">
+		<input type="checkbox" name="terminos">
+		<label for="terminos">Acepta los terminos y condiciones</label>
 	</form>
 </body>
 </html>
