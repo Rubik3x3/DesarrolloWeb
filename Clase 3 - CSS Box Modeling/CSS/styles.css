@@ -15,3 +15,22 @@ section article{
 section article p{
 	color: #ffffff;
 }
+
+.contenedor{
+	background-color: #808080;
+}
+.contenedor_parrafo{
+	color: #353535;
+	font-size: 20px;
+}
+
+.contenedorPrueba{
+	background-color: red;
+	width: 150px;
+	height: 150px;
+	overflow: scroll;
+}
+
+#parrafoUnico{
+	color: blue;
+}
