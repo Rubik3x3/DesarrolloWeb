@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+section{
+	border: solid 5px black;
+}
+
+section article{
+	background-color: #505050;
+	width: 200px;
+	height: 100px;
+}
+
+section article p{
+	color: #ffffff;
+}
