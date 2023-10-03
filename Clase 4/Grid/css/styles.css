@@ -1,0 +1,23 @@
+.grid-cont{
+	background-color: aqua;
+}
+
+#grid-cont__titulo{
+	background-color: blueviolet;
+}
+
+#grid-cont__parrafo{
+	background-color: brown;
+}
+
+#grid-cont__foto-principal{
+	background-color: chartreuse;
+}
+
+#grid-cont__foto1{
+	background-color: crimson;
+}
+
+#grid-cont__foto2{
+	background-color: orange;
+}
