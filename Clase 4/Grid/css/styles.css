@@ -1,23 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .grid-cont{
 	background-color: aqua;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: 
+		"titulo foto-principal foto-principal"
+		"parrafo foto-principal foto-principal" 
+		"foto1 foto1 foto2"	
+	;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 }
 
 #grid-cont__titulo{
 	background-color: blueviolet;
+	grid-area: titulo;
 }
 
 #grid-cont__parrafo{
 	background-color: brown;
+	grid-area: parrafo;
 }
 
 #grid-cont__foto-principal{
 	background-color: chartreuse;
+	grid-area: foto-principal;
+	align-self: center;
+	justify-self: center;
 }
 
 #grid-cont__foto1{
 	background-color: crimson;
+	grid-area: foto1;
 }
 
 #grid-cont__foto2{
 	background-color: orange;
+	grid-area: foto2;
 }
