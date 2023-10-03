@@ -43,3 +43,16 @@
 	background-color: orange;
 	grid-area: foto2;
 }
+
+@media screen and (max-width: 768px) {
+	.grid-cont{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 2fr 2fr 1fr;
+		grid-template-areas: 
+			"titulo titulo"
+			"foto-principal foto-principal"
+			"parrafo parrafo"
+			"foto1 foto2"
+		;
+	}
+}
