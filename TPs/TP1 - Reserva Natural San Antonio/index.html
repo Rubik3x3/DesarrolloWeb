@@ -6,19 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reserva Natural de San Antonio</title>
   <link rel="stylesheet" type="text/css" href="css/styles-index.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="">Ubicación</a></li>
-        <li><a href="">Flora y Fauna</a></li>
-        <li> <a href="">Actividades Turísticas</a></li>
-        <li><a href="">Imágenes</a></li>
+    <nav class="navegacion">
+      <ul class="navegacion__lista">
+        <li class="navegacion__lista__item"><a href="#contenedor-informacion__ubicacion">Ubicación</a></li>
+        <li class="navegacion__lista__item"><a href="">Flora y Fauna</a></li>
+        <img class="navegacion__lista__logo" src="imagenes/logo_parques_nacionales.png" alt="">
+        <li class="navegacion__lista__item"><a href="">Actividades Turísticas</a></li>
+        <li class="navegacion__lista__item"><a href="paginas/imagenes.html">Imágenes</a></li>
       </ul>
     </nav>
+    <div class="contenedor-principal">
+      <h1 id="contenedor-principal__titulo"><strong>Reserva Natural</strong><br>de <strong>San Antonio</strong></h1>
+    </div>
+
   </header>
+  
+  <div class="contenedor-informacion">
+    <div id="contenedor-informacion__ubicacion">
+      <h2>Ubicación</h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus adipisci ad ullam sed iusto tempore repellat cupiditate, molestiae in facilis nostrum animi beatae veritatis ipsum repellendus aliquam deserunt ducimus! Incidunt.</p>
+    </div>
+
+    <div id="contenedor-informacion__ubicacion-imagen">
+      <img src="https://4.bp.blogspot.com/-OJ42E9N-8ww/VZSKoPfFKBI/AAAAAAAAACA/ISKSiE7x-MQ/s1600/1246994071_Mapa_Misiones.jpg" alt="Mapa Misiones">
+    </div>
+
+    <div id="contenedor-informacion__flora-fauna">
+      <h2>Flora y Fauna</h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus adipisci ad ullam sed iusto tempore repellat cupiditate, molestiae in facilis nostrum animi beatae veritatis ipsum repellendus aliquam deserunt ducimus! Incidunt.</p>
+    </div>
+
+    <div id="contenedor-informacion__flora-fauna-imagen">
+      <img src="" alt="">
+    </div>
+    
+    <div id="contenedor-informacion__actividades">
+      <h2>Actividades Turisticas</h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus adipisci ad ullam sed iusto tempore repellat cupiditate, molestiae in facilis nostrum animi beatae veritatis ipsum repellendus aliquam deserunt ducimus! Incidunt.</p>
+    </div>
+  </div>
 </body>
 
 </html>

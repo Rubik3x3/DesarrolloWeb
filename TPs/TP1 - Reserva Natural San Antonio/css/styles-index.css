@@ -1,44 +1,139 @@
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body{
-
+.contenedor-principal{
+    width: 100%;    
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;  
+	justify-content: center ;
 }
 
-nav{
-	background-color: black;
+#contenedor-principal__titulo{
+    color: #ffffff;
+    opacity: 0.65;
+    font-size: 96px;
+    text-align: center;
+    transition-duration: 200ms;
 }
 
-ul{
-	list-style: none;
-	font-size: 0;	
-	background-color: #151515;
+#contenedor-principal__titulo:hover{
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 112px;
+    text-align: center;
 }
 
-li{
-	display: inline-block;
-	width: 20%;
+
+#contenedor-principal__imagen{
+    width: 100%;
+    height: 40%;
+}
+
+header{
+    padding: 10px;
+    background-image: url(https://www.argentina.gob.ar/sites/default/files/rn_san_antonio_fauna_ph_parquesnacionales.jpg);
+}
+
+.navegacion{
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.7;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 45px 0px #151515;
+    -moz-box-shadow: 10px 10px 45px 0px #151515;
+    box-shadow: 10px 10px 45px 0px #151515;
+}
+
+.navegacion__lista{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;  
+	justify-content: space-evenly;
+}
+
+.navegacion__lista__item{
+    display: inline-block;
+    padding: 20px;
 	position: relative;
 	font-size: 20px;
-	font-family: sans-serif;
+    text-align: center; 
 }
 
-ul ul{
-	display: none;
-	position: absolute;
+.navegacion__lista__item a{
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transition-duration: 300ms;
+    color: #353535;
 }
 
-ul ul li{
-	display: block;
+.navegacion__lista__item a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #505050;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
 }
 
-ul li:hover ul{
-	display: block;
+
+.navegacion__lista__logo{
+    height: 55px;
+    margin: 5px;
 }
 
-li a{
-	color: #ffffff;
-	text-decoration: none;
+.contenedor-informacion{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "ubicacion-texto ubicacion-imagen"
+        "flora-y-fauna-imagen flora-y-fauna-texto"
+        "acts acts"
+    ;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
+#contenedor-informacion__ubicacion{
+    grid-area: ubicacion-texto;
+    margin-right: 10px;
+}
+
+#contenedor-informacion__ubicacion-imagen{
+    grid-area: ubicacion-imagen;
+    margin-left: 10px;
+}
+
+#contenedor-informacion__ubicacion-imagen img{
+    border-radius: 35px;
+    height: 640px;
+    width: 547;
+    -webkit-box-shadow: 5px 0px 50px 0px #303030;
+    -moz-box-shadow: 5px 0px 50px 0px #303030;
+    box-shadow: 5px 0px 50px 0px #303030;
+}
+
+#contenedor-informacion__flora-fauna{
+    grid-area: flora-y-fauna-texto;
+    margin-top: 35px;
+}
+
+#contenedor-informacion__flora-fauna-imagen{
+    grid-area: flora-y-fauna-imagen;
+    margin-top: 35px;
+}
+
+#contenedor-informacion__actividades{
+    grid-area: acts;
 }
