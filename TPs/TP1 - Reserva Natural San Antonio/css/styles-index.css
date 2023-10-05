@@ -18,13 +18,19 @@ body{
     height: 700px;
     display: flex;
     flex-flow: column nowrap;  
-	justify-content: center ;
+	justify-content: center;
+    align-items: center;
 }
 
 #contenedor-principal__titulo{
     color: #ffffff;
-    opacity: 0.65;
-    font-size: 96px;
+    opacity: 0.80;
+    background-color: #00000023;
+    border-radius: 45px;
+    padding: 50px;
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 72px;
     text-align: center;
     transition-duration: 200ms;
 }
@@ -32,8 +38,10 @@ body{
 #contenedor-principal__titulo:hover{
     color: #ffffff;
     opacity: 0.9;
-    font-size: 112px;
+    padding: 60px;
+    font-size: 80px;
     text-align: center;
+    border-radius: 15px;
 }
 
 #contenedor-principal__imagen{
@@ -59,6 +67,7 @@ header{
     display: flex;
     flex-flow: row nowrap;  
 	justify-content: space-evenly;
+    align-items: center;
 }
 
 .navegacion__lista__item{
