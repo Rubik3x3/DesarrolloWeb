@@ -25,26 +25,27 @@ body{
 
 #contenedor-principal__titulo{
     color: #ffffff;
-    opacity: 0.80;
-    background-color: #00000023;
+    opacity: 1;
+    background-color: #ffffff0c;
     border-radius: 10px;
     padding: 50px;
     font-weight: bold;
-    font-family: 'Cutive Mono', monospace;
-    font-size: 72px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
     text-align: center;
     transition-duration: 200ms;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
 }
 
 #contenedor-principal__titulo:hover{
-    background-color: #202020;
-    opacity: 0.75;
+    background-color: #202020ab;
+    opacity: 1;
     padding: 60px;
-    font-size: 80px;
+    font-size: 88px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 15px 15px 0px #101010 inset; 
+    backdrop-filter: blur(2px);
     
 }
 
@@ -65,7 +66,7 @@ header{
     width: 100%;
     background-color: #fff;
     opacity: 0.6;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 10px 10px 45px 0px #151515;
 }
 
