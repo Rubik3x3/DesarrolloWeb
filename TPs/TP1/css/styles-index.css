@@ -73,7 +73,7 @@ header{
 .navegacion__lista{
     list-style: none;
     display: flex;
-    flex-flow: column nowrap;  
+    flex-flow: row nowrap;  
 	justify-content: space-evenly;
     align-items: center;
 
@@ -216,6 +216,11 @@ p{
 }
 
 @media screen and (max-width: 768px) {
+
+    .navegacion__lista{
+        flex-flow: column nowrap;  
+    }
+
     .contenedor-informacion{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
