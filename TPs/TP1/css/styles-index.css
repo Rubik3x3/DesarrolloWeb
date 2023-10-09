@@ -133,6 +133,7 @@ header{
     margin-left: 12.5%;
     margin-right: 12.5%;
     margin-top: 50px;
+    position: relative;
 }
 
 #contenedor-informacion__ubicacion{
