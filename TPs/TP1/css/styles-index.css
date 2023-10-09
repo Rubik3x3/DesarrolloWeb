@@ -139,7 +139,7 @@ header{
     grid-area: ubicacion-texto;
     margin-right: 10px;
     height: 80vh;
-    overflow: scroll;
+
     text-align: center;
 }
 
@@ -158,7 +158,7 @@ header{
 #contenedor-informacion__flora-fauna{
     grid-area: flora-y-fauna-texto;
     margin-top: 30px;
-    overflow: scroll;
+    
     text-align: center;
     height: 80vh;
 }

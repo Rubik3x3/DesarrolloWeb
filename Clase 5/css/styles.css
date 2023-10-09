@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenedor{
@@ -19,19 +20,28 @@
 }
 
 .contenedor header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
     grid-area: header;
 }
 
 #contenedor__titulo{
+    text-align: center;
     grid-area: titulo;
 }
 
 #contenedor__parrafo{
+    text-align: center;
     grid-area: parrafo;
 }
 
 #contenedor__video{
     grid-area: video;
+}
+
+#contenedor__video video{
+    width: 100%;
 }
 
 #contenedor__imagen-1{
@@ -40,8 +50,13 @@
 
 #contenedor__imagen-1 img{
     width: 100%;
-    height: 100%;
+    height: 95%;
     object-fit: cover;
+}
+
+#contenedor__imagen-1 h2{
+    width: 100%;
+    height: 5%;
 }
 
 #contenedor__imagen-2{
@@ -65,5 +80,9 @@
 }
 
 .contenedor footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
     grid-area: footer;
 }
