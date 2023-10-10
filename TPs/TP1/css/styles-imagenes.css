@@ -62,7 +62,7 @@ header{
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "img1 img1 img2 img3"
         "img6 img5 img2 img4"
@@ -102,14 +102,6 @@ header{
     height: 100%;
     object-fit: cover;
 }
-
-#contenedor__img2:hover{
-    grid-template-areas: 
-        "img1 img2 img2 img3"
-        "img6 img2 img2 img4"
-    ;
-}
-
 
 #contenedor__img3{
     grid-area: img3;
