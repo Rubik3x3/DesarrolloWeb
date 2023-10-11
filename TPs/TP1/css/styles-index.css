@@ -595,8 +595,8 @@ footer div{
             "actividades"
             "video"
         ;
-        margin-left: 5.5%;
-        margin-right: 5.5%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     #contenedor-informacion__ubicacion p{
         font-size: 2.25vh;
