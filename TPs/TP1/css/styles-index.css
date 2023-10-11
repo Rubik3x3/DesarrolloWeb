@@ -211,7 +211,7 @@ header{
 }
 
 p{
-    font-size: 3.35vh;
+    font-size: 3.3vh;
     color: #303030;
 }
 
@@ -286,8 +286,8 @@ footer div{
 }
 
 #footer-informacion div img{
-    width: 350;
-    height: 350px;
+    width: 25vw;
+    height: 25vw;
     opacity: 0.75;
     transition-duration: 200ms;
 }
@@ -343,10 +343,40 @@ footer div{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px){
+    
+    #contenedor-principal__titulo{
+        color: #ffffff;
+        opacity: 1;
+        background-color: #ffffff0c;
+        border-radius: 10px;
+        padding: 20px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 32px;
+        text-align: center;
+        transition-duration: 200ms;
+        backdrop-filter: blur(4px);
+    }
+    
+    #contenedor-principal__titulo:hover{
+        background-color: #202020ab;
+        opacity: 1;
+        padding: 30px;
+        font-size: 48px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 15px 15px 0px #101010 inset; 
+        backdrop-filter: blur(2px);
+        
+    }
 
-    .navegacion__lista{
-        flex-flow: column nowrap;  
+    .navegacion__lista__item{
+        visibility: hidden;
+    }
+
+    #scroll-arriba{
+        visibility: hidden;
     }
 
     .contenedor-informacion{
@@ -359,28 +389,15 @@ footer div{
             "flora-y-fauna-imagen"
             "actividades"
             "video"
-    
         ;
     }
-
-    #contenedor-informacion__ubicacion-imagen iframe{
-        height: 50vh;
-        width: 100%;
-        box-shadow: 5px 0px 50px 0px #757575;
+    
+    p{
+        font-size: 3.3vw;
+        color: #303030;
     }
 
-    .contenedor-informacion__flora-fauna-imagenes {
-        width: 100%;
-        height: 50vh;
-        margin-top: 30px;
-        overflow: hidden;
-        white-space: nowrap;
-        border-radius: 10px;
-        box-shadow: 5px 0px 50px 0px #757575;
-      }
-
-      #contenedor-informacion__flora-fauna{
-        margin-top: 10px;
+    footer{
+        visibility: hidden;
     }
-
 }
