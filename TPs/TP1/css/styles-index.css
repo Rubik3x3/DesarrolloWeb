@@ -144,12 +144,14 @@ header{
     grid-area: ubicacion-texto;
     margin-right: 10px;
     height: 80vh;
-    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #contenedor-informacion__ubicacion p{
-    font-size: 16px;
-    font-size: 3vh;
+    font-size: 100%;
     color: #303030;
 }
 
@@ -173,7 +175,7 @@ header{
 }
 
 #contenedor-informacion__flora-fauna p{
-    font-size: clamp( 1vh, 3.3vh, 3.5vh);
+    font-size: 100%;
     color: #303030;
 }
 
@@ -214,7 +216,7 @@ header{
 }
 
 #contenedor-informacion__actividades p{
-    font-size: 3.3vh;
+    font-size: 100%;
     color: #303030;
 }
 
@@ -599,7 +601,7 @@ footer div{
         margin-right: 0%;
     }
     #contenedor-informacion__ubicacion p{
-        font-size: 2.25vh;
+        font-size: 100%;
     }
     #contenedor-informacion__ubicacion-imagen iframe{
         width: 100%;
