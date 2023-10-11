@@ -374,13 +374,11 @@ footer div{
         width: 100%;
         height: 70vh;
     }
-    #contenedor-informacion__flora-fauna-imagenes {
-        width: 100vw;
+    .contenedor-informacion__flora-fauna-imagenes {
+        width: 100%;
+        height: 70vh;
     }
 
-    #contenedor-informacion__flora-fauna-imagenes img{
-        width: 100%;
-    }
     .contenedor-informacion{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -401,10 +399,7 @@ footer div{
         display: block;
         position: relative;
         font-size: 20px;
-        text-align: center; 
-    }
-
-    .navegacion__lista__menu a{
+        text-align: center;
         text-decoration: none;
         font-weight: bold;
         width: 100%;
@@ -414,7 +409,7 @@ footer div{
         color: #353535;
     }
 
-    .navegacion__lista__menu a:hover{
+    .navegacion__lista__menu:hover{
         background-color: #404040;
         border-radius: 5px;
         padding: 15px;
@@ -469,6 +464,17 @@ footer div{
             "actividades"
             "video"
         ;
+    }
+    #contenedor-informacion__ubicacion p{
+        font-size: 2.25vh;
+    }
+    #contenedor-informacion__ubicacion-imagen iframe{
+        width: 100%;
+        height: 35vh;
+    }
+    .contenedor-informacion__flora-fauna-imagenes {
+        width: 100%;
+        height: 35vh;
     }
     
     footer{
