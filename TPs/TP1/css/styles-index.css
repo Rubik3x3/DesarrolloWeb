@@ -601,11 +601,11 @@ footer div{
     }
     #contenedor-informacion__ubicacion-imagen iframe{
         width: 100%;
-        height: 35vh;
+        height: 15vh;
     }
     .contenedor-informacion__flora-fauna-imagenes {
         width: 100%;
-        height: 35vh;
+        height: 15vh;
     }
     
     footer{
