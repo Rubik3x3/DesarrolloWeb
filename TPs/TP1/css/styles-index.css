@@ -363,6 +363,30 @@ footer div{
         display: none;
     }
 
+    .navegacion__lista__menu{
+        display: block;
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition-duration: 300ms;
+        color: #353535;
+    }
+
+    .navegacion__lista__menu:hover{
+        background-color: #404040;
+        border-radius: 5px;
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 4px 4px 0px #151515 inset; 
+        color: #fff;
+    }
+
     #scroll-arriba{
         display: none;
     }
@@ -394,6 +418,14 @@ footer div{
 }
 
 @media screen and (max-width: 320px){
+
+    .navegacion__lista__item{
+        display: none;
+    }
+
+    #scroll-arriba{
+        display: none;
+    }
 
     .navegacion__lista__menu{
         display: block;
@@ -443,14 +475,6 @@ footer div{
         box-shadow: 0px 15px 15px 0px #101010 inset; 
         backdrop-filter: blur(2px);
         
-    }
-
-    .navegacion__lista__item{
-        display: none;
-    }
-
-    #scroll-arriba{
-        display: none;
     }
 
     .contenedor-informacion{
