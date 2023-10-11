@@ -80,6 +80,10 @@ header{
 
 }
 
+.navegacion__lista__menu{
+    display: none;
+}
+
 .navegacion__lista__item{
     display: inline-block;
 	position: relative;
@@ -145,7 +149,8 @@ header{
 }
 
 #contenedor-informacion__ubicacion p{
-    font-size: 3.3vh;
+    font-size: 16px;
+    font-size: 3vh;
     color: #303030;
 }
 
@@ -169,7 +174,7 @@ header{
 }
 
 #contenedor-informacion__flora-fauna p{
-    font-size: 3.3vh;
+    font-size: clamp( 1vh, 3.3vh, 3.5vh);
     color: #303030;
 }
 
@@ -223,7 +228,7 @@ header{
     width: 100%;
     border-radius: 10px;
     box-shadow: 5px 0px 50px 0px #757575;
-}
+}   
 
 #scroll-arriba{
     position:fixed;
@@ -354,6 +359,10 @@ footer div{
 }
 
 @media screen and (max-width: 320px){
+
+    .navegacion__lista__menu{
+        display: block;
+    }
     
     #contenedor-principal__titulo{
         color: #ffffff;
@@ -382,11 +391,11 @@ footer div{
     }
 
     .navegacion__lista__item{
-        visibility: hidden;
+        display: none;
     }
 
     #scroll-arriba{
-        visibility: hidden;
+        display: none;
     }
 
     .contenedor-informacion{
@@ -403,11 +412,11 @@ footer div{
     }
     
     p{
-        font-size: 3.3vw;
+        font-size: clamp( 1vh, 3.3vh, 3.5vh);
         color: #303030;
     }
 
     footer{
-        visibility: hidden;
+        display: none;
     }
 }
