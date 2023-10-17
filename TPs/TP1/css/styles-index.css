@@ -218,6 +218,9 @@ header{
     grid-area: actividades;
     margin-top: 30px;
     text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;    
 }
 
 #contenedor-informacion__actividades p{
