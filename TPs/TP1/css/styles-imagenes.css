@@ -247,3 +247,18 @@ header{
 }
 
 
+
+/* 
+---------------------------------------------------------------------
+-----------------------RESPONSIVE PARA CELULAR-----------------------
+---------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 320px){
+    .contenedor__imagenes div h1{
+        color: #fff;
+        background-color: #00000035;
+        padding: 25px;
+        font-size: 8px;
+    }
+}
