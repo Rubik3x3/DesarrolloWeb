@@ -3,4 +3,40 @@
     height: 200px;
     background-color: rebeccapurple;
     position: relative;
+    animation: mover 3s infinite;
+}
+
+@keyframes mover{
+    0%{
+        left: 0px;
+    }
+    25%{
+        left: 100px;
+    }
+    50%{
+        left: 125px;
+    }
+    100%{
+        left: 200px;
+    }
+    /*
+    from{
+        left: 0px;
+    }to{
+        left: 100px;
+        background-color: red;
+    }*/
+}
+
+#titulo-animado{
+    animation: aparecer 3s 2
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+        font-size: 64px;
+    }
 }
