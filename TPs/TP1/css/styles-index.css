@@ -619,13 +619,40 @@ footer div{
         width: 100%;
         height: 35vh;
     }
-    
+
     footer{
+        display: block;
+    }
+
+    #footer-gradiante{
+        font-size: 100%;
+    }
+    
+    #footer-informacion{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 1fr;
         grid-template-areas: 
-            ""
+            "infoContactos" 
+            "infoInstagram"
+            "copyright"
         ;
+    }
+
+    .footer-informacion__lados{
+        background-color: #000;
+    }
+    
+    .footer-informacion__lados__email{
+        grid-area: infoContactos;
+    }
+
+    .footer-informacion__lados__instagram{
+        grid-area: infoInstagram;
+    }
+
+    #footer-informacion__medio{
+        grid-area: copyright;
+        background-color: #000;
     }
 }
