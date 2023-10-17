@@ -88,7 +88,15 @@ header{
     opacity: 0.5;
     height: 100%;
     width: 100%;
+    transition-duration: 300ms;
+    overflow: hidden;
 }
+
+.contenedor__imagenes:hover div{
+    transform: translateY(-100%);
+}
+
+
 
 #contenedor__img1{
     grid-area: img1;
