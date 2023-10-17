@@ -62,7 +62,7 @@ header{
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
     grid-template-areas: 
         "img1 img1 img2 img3"
         "img6 img5 img2 img4"
@@ -82,6 +82,13 @@ header{
     transition-duration: 1s;
 }
 
+.contenedor__imagenes div{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
 
 #contenedor__img1{
     grid-area: img1;

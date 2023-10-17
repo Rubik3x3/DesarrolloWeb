@@ -596,7 +596,7 @@ footer div{
 
     .contenedor-informacion{
         grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 1fr 1.5fr 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1.5fr 1fr 0.6fr 1fr;
         grid-template-areas: 
             "ubicacion-texto"
             "ubicacion-imagen"
@@ -621,6 +621,11 @@ footer div{
     }
     
     footer{
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            ""
+        ;
     }
 }
