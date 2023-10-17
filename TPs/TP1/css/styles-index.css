@@ -593,7 +593,7 @@ footer div{
 
     .contenedor-informacion{
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 2fr 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1.5fr 1fr 1fr 1fr;
         grid-template-areas: 
             "ubicacion-texto"
             "ubicacion-imagen"
@@ -606,15 +606,15 @@ footer div{
         margin-right: 5%;
     }
     #contenedor-informacion__ubicacion p{
-        font-size: 100%;
+        font-size: 110%;
     }
     #contenedor-informacion__ubicacion-imagen iframe{
         width: 100%;
-        height: 45;
+        height: 35vh;
     }
     .contenedor-informacion__flora-fauna-imagenes {
         width: 100%;
-        height: 45vh;
+        height: 35vh;
     }
     
     footer{
