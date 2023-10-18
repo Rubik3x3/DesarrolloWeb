@@ -247,6 +247,38 @@ header{
 }
 
 
+/* 
+---------------------------------------------------------------------
+-----------------------RESPONSIVE PARA TABLET------------------------
+---------------------------------------------------------------------
+*/
+@media screen and (max-width: 768px){
+    .contenedor{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 5vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.75fr 1fr 1fr 0.35fr 0.75fr 1fr 0.35fr 0.5fr 0.5fr 0.75fr 0.5fr 0.75fr 0.5fr;
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8"
+            "img9"
+            "img10"
+            "img11"
+            "img12"
+            "img13"
+        ;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+}
 
 /* 
 ---------------------------------------------------------------------
