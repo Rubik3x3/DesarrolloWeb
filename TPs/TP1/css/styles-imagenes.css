@@ -8,6 +8,7 @@ header{
     margin-left: 15vw;
     margin-top: 10px;
     margin-right: 15vw;
+    
 }
 
 .navegacion{
@@ -17,6 +18,7 @@ header{
     backdrop-filter: blur(8px);
     margin-bottom: 10px;
     border-radius: 10px;
+
 }
 
 .navegacion__lista{
@@ -130,7 +132,6 @@ header{
 }
 #contenedor__img1{
     grid-area: img1;
-    z-index: -100;
 }
 
 #contenedor__img1 img{
