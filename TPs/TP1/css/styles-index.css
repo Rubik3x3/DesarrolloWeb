@@ -490,6 +490,8 @@ footer div{
     .contenedor-informacion{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 2vw;
+        margin-right: 2vw;
         grid-template-areas: 
             "ubicacion-texto"
             "ubicacion-imagen"
@@ -674,8 +676,8 @@ footer div{
             "actividades"
             "video"
         ;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     #contenedor-informacion__ubicacion p{
         font-size: 110%;
