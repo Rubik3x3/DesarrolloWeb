@@ -328,10 +328,6 @@ footer div{
     align-items: center;
 }
 
-.footer-informacion__lados h2{
-    color: red;
-}
-
 .footer-informacion__lados__email{
     text-decoration: none;
     color: #ffffff; 
