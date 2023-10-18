@@ -328,12 +328,16 @@ footer div{
     align-items: center;
 }
 
+.footer-informacion__lados h2{
+    color: red;
+}
+
 .footer-informacion__lados__email{
     text-decoration: none;
     color: #ffffff; 
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 2px;
     transition-duration: 200ms;
     font-weight: bold;
@@ -351,7 +355,7 @@ footer div{
     color: #ffffff; 
     font-size: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 2px;
     transition-duration: 200ms;
     font-weight: bold;
@@ -515,6 +519,25 @@ footer div{
         ;
     }
 
+    footer{
+        display: block;
+    }
+
+    #footer-gradiente h1{
+        font-size: 80px;
+    }
+    
+    #footer-informacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.6fr 0.6fr;
+        grid-template-areas: 
+            "infoContactos" 
+            "infoInstagram"
+            "copyright"
+        ;
+    }
+
     .footer-informacion__lados{
         background-color: #000;
         height: 100%;
@@ -528,7 +551,16 @@ footer div{
         grid-area: infoInstagram;
     }
 
+    #footer-informacion__lados__redes{
+        margin-top: 25vh;
+        margin-bottom: 10vh;
+    }
+
     #footer-informacion__medio{
+        display: flex;
+        padding-top: 15vh;
+        align-items: center;
+        flex-direction: column;
         grid-area: copyright;
         background-color: #000;
     }
@@ -689,7 +721,16 @@ footer div{
         grid-area: infoInstagram;
     }
 
+    #footer-informacion__lados__redes{
+        margin-top: 25vh;
+        margin-bottom: 10vh;
+    }
+
     #footer-informacion__medio{
+        display: flex;
+        padding-top: 15vh;
+        align-items: center;
+        flex-direction: column;
         grid-area: copyright;
         background-color: #000;
     }
