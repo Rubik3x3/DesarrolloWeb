@@ -151,6 +151,7 @@ header{
 }
 
 #contenedor-informacion__ubicacion p{
+    margin-top: 10px;
     font-size: 100%;
     color: #303030;
 }
@@ -179,6 +180,7 @@ header{
 }
 
 #contenedor-informacion__flora-fauna p{
+    margin-top: 10px;
     font-size: 100%;
     color: #303030;
 }
@@ -223,6 +225,7 @@ header{
 }
 
 #contenedor-informacion__actividades p{
+    margin-top: 10px;
     font-size: 100%;
     color: #303030;
 }
