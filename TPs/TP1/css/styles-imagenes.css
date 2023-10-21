@@ -74,6 +74,8 @@ header{
 }
 
 .contenedor{
+    z-index: -1;
+    position: absolute;
     margin-left: 15vw;
     margin-right: 15vw;
     margin-bottom: 5vh;
