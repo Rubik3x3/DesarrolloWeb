@@ -1,0 +1,10 @@
+img{
+    height: 64px;
+    width: 64px;
+}
+
+header nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
