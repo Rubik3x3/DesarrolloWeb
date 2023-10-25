@@ -1,10 +1,71 @@
-img{
-    height: 64px;
-    width: 64px;
-}
-
 header nav{
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+    background-color: #000000;
+}
+
+nav div{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.contenedor-principal{
+    height: 95vh;
+    width: 100%;
+}
+
+#carouselExampleDark{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+#carouselExampleDark h5{
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+#carouselExampleDark p{
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+#carouselExampleDark button{
+    background-color: #ffffff;
+}
+
+#carouselExampleDark img{
+    height: 95vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#contenedor-principal__titulo{
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    align-items: center;
     justify-content: center;
+    height: 95vh;
+    width: 100%;
+    z-index: 1;
+}
+
+#contenedor-principal__titulo h1{
+    color: #ffffff;
+    opacity: 0.75;
+    font-size: 128px;
+}
+
+.contenedor-cartas a{
+    text-decoration: none;
+    color: #000000
 }
