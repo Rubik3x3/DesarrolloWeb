@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP 2</title>
+    <title>Argentina</title>
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -16,12 +16,16 @@
 
 </head>
 <body>
+
+    <!-- --------------------------------------------------- -->
+    <!-- ------------------------NAV------------------------ -->
+    <!-- --------------------------------------------------- -->
     <header>
         <nav class="navbar navbar-light bg-light">    
             <div class="btn-group" aria-label="Basic example">
-                <button type="button" class="btn btn-light">Inicio</button>
+                <button type="button" class="btn btn-light" title="Volver al inicio" >Inicio</button>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Información</button>
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" title="Submenú de información">Información</button>
                     <div class="dropdown-menu">
                         <a href="" class="dropdown-item">Historia</a>
                         <a href="" class="dropdown-item">Cultura</a>
@@ -30,11 +34,32 @@
                         <a href="" class="dropdown-item">Comida</a>
                     </div>
                 </div>
-                <button type="button" class="btn btn-light">Contacto</button>
+                <button type="button" class="btn btn-light"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" title="Información de contacto">Contacto</button>
             </div>
         </nav>
     </header>
+    <!-- --------------------------------------------------- -->
+    <!-- ---------------------OFFCANVAS--------------------- -->
+    <!-- --------------------------------------------------- -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Contacto</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nostrum in laudantium harum cumque voluptas eos ex eveniet! Sapiente eligendi repellendus magnam quaerat neque dignissimos modi sequi nihil qui nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt libero quas itaque? Cupiditate est sapiente placeat assumenda enim. Nobis, earum nam? Eius, incidunt consequatur. Nisi quos aspernatur consectetur commodi.</p>
+        </div>
+    </div>
 
+    <!-- --------------------------------------------------- -->
+    <!-- -----------------------TOAST----------------------- -->
+    <!-- --------------------------------------------------- -->
+
+
+    <!-- --------------------------------------------------- -->
+    <!-- ----------------CONTENEDOR PRINCIPAL--------------- -->
+    <!-- --------------------------------------------------- -->
     <div class="contenedor-principal">
         
         <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
@@ -55,48 +80,98 @@
                     <img src="assets/imagenes/perito.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Perito Moreno</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                      <p>Texto de información sobre la imágen.</p>
                     </div>
                 </div>
-              <div class="carousel-item active" data-bs-interval="1000">
+              <div class="carousel-item active" data-bs-interval="1500">
                 <img src="assets/imagenes/monte.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Monte Fitz Roy</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Texto de información sobre la imágen.</p>
                 </div>
               </div>
               
-              <div class="carousel-item" data-bs-interval="1000">
+              <div class="carousel-item" data-bs-interval="1500">
                 <img src="assets/imagenes/mardel.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Mar del Plata</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>Texto de información sobre la imágen.</p>
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
+              <div class="carousel-item" data-bs-interval="1500">
                 <img src="assets/imagenes/desierto.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Desierto del Diablo</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>Texto de información sobre la imágen.</p>
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="1000">
+              <div class="carousel-item" data-bs-interval="1500">
                 <img src="assets/imagenes/puerto.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Puerto Madryn</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>Texto de información sobre la imágen.</p>
                 </div>
               </div>
             </div>
         </div>
       </div>
 
-      <div class="contenedor-cartas">
-        <div class="card" style="width: 18rem;">
+
+    <!-- --------------------------------------------------- -->
+    <!-- ------------------CONTENEDOR CARDS----------------- -->
+    <!-- --------------------------------------------------- -->
+      <div class="row container-fluid contenedor-cartas">
+        <div class="card col-lg-4" id="cartas-provincias" style="width: 20rem;">
             <a href="">
                 <img src="assets/imagenes/mardel.jpg" class="card-img-top" alt="Mar del Plata">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h4>Provincias</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4" id="cartas-paisajes" style="width: 20rem;">
+            <a href="">
+                <img src="assets/imagenes/paisaje.jpg" class="card-img-top" alt="Mar del Plata">
+                <div class="card-body">
+                    <h4>Paisajes</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4" id="cartas-comida" style="width: 20rem;">
+            <a href="">
+                <img src="assets/imagenes/comida.jpg" class="card-img-top" alt="Mar del Plata">
+                <div class="card-body">
+                    <h4>Comida</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4" id="cartas-cultura" style="width: 20rem;">
+            <a href="">
+                <img src="assets/imagenes/cultura.jpg" class="card-img-top" alt="Mar del Plata">
+                <div class="card-body">
+                    <h4>Cultura</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4" id="cartas-historia" style="width: 20rem;">
+            <a href="">
+                <img src="assets/imagenes/historia.jpg" class="card-img-top" alt="Mar del Plata">
+                <div class="card-body">
+                    <h4>Historia</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-lg-4" id="cartas-histori" style="width: 20rem;">
+            <a href="">
+                <img src="assets/imagenes/mardel.jpg" class="card-img-top" alt="Mar del Plata">
+                <div class="card-body">
+                    <h4>Historia</h4>
+                <p class="card-text">Argentina contiene 23 provincias que se desarrollan a lo largo del país.</p>
                 </div>
             </a>
         </div>
