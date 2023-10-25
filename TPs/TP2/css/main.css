@@ -29,6 +29,10 @@ nav div{
     justify-content: center;
 }
 
+nav div button i{
+    background-color: #000000;
+}
+
 .contenedor-principal{
     height: 95vh;
     width: 100%;
