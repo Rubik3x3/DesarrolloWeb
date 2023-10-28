@@ -33,6 +33,7 @@ nav div button i{
     background-color: #000000;
 }
 
+
 .contenedor-principal{
     height: 95vh;
     width: 100%;
@@ -40,6 +41,7 @@ nav div button i{
 
 .contenedor-principal div h1{
     font-family: 'Encode Sans', Courier, monospace;
+    text-shadow: 0px 0px 50px rgba(255,255,255,1);
 }
 
 #carouselExampleDark{
@@ -85,58 +87,46 @@ nav div button i{
     font-size: 128px;
 }
 
-.contenedor-cartas a{
-    text-decoration: none;
-    color: #000000
-}
-
-.contenedor-cartas{
-    margin-top: 15vh;
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "provincias paisajes comida"
-        "cultura historia histori"
-    ;
-    margin-top: 15vh;
-    margin-left: 4vw;
-    margin-right: 4vw;
-}
-
 .card{
-    background-color: #ccc;
-    width: 100%;
+    border: none;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    transition-duration: 300ms;
 }
-
 .card img{
     width: 100%;
-    height: 150px;
+    height: 250px;
+    border-radius: 10px;
+    filter: saturate(250%);
     object-fit: cover;
+    transition-duration: 300ms;
 }
 
-#cartas-provincias{
-    grid-area: provincias;
+.card:hover{
+    border-radius: 25px;
+    border: 2px solid #177ed1;
+    background-color: #177ed1;
 }
 
-#cartas-paisajes{
-    grid-area: paisajes;
+.card:hover img{
+    border-radius: 25px;    
 }
 
-#cartas-comida{
-    grid-area: comida;
+.card h5{
+    transition-duration: 250ms;
 }
 
-#cartas-cultura{
-    grid-area: cultura;
+.card:hover h5{
+    color: #ffffff;
+    transform: rotate(2deg);
 }
 
-#cartas-historia{
-    grid-area: historia;
+.card p{
+    transition-duration: 250ms;
 }
 
-#cartas-histori{
-    grid-area: histori;
+.card:hover p{
+    color: #cccccc;
 }
