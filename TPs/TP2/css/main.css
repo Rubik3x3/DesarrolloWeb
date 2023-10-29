@@ -41,6 +41,7 @@ nav div button i {
 
 .contenedor-principal div h1 {
     font-family: 'Encode Sans', Courier, monospace;
+    user-select: none;
     text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
 }
 
@@ -48,6 +49,7 @@ nav div button i {
     width: 100%;
     height: 100%;
     background-color: #000000;
+    user-select: none;
 }
 
 #carouselExampleDark h5 {
@@ -107,6 +109,7 @@ nav div button i {
     box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.5);
     object-fit: cover;
     transition-duration: 500ms;
+    user-select: none;
 }
 
 .card:hover {
@@ -124,6 +127,7 @@ nav div button i {
 .card h5 {
     transition-duration: 500ms;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    user-select: none;
 }
 
 .card:hover h5 {
@@ -133,6 +137,7 @@ nav div button i {
 
 .card p {
     transition-duration: 500ms;
+    user-select: none;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
