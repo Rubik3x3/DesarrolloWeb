@@ -7,6 +7,8 @@ header nav ul {
   flex-flow: row nowrap;
   justify-content: space-evenly; }
   header nav ul li {
-    list-style: none; }
+    list-style: none;
+    padding: 25px; }
     header nav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #e0aaff; }

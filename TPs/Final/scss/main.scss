@@ -1,3 +1,14 @@
+$color1:#e0aaff;
+$color2:#c77dff;
+$color3:#9d4edd;
+$color4:#7b2cbf;
+$color5:#5A189A;
+$color6:#3c096c;
+$color7:#240046;
+$color8:#10002B;
+$color_black:#101010;
+$color_white:#ffffff;
+
 *{
     margin: 0;
     padding: 0;
@@ -12,8 +23,10 @@ header{
             justify-content: space-evenly;
             li{
                 list-style: none;
+                padding: 25px;
                 a{
                     text-decoration: none;
+                    color: $color1;
                 }
             }
         }
