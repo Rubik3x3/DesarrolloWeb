@@ -1,23 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import 'colors';
+@import 'elementos';
 
 header{
-    nav{
-        
-        ul{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            li{
-                list-style: none;
-                padding: 25px;
-                a{
-                    text-decoration: none;
-                    color: #303030;
-                }
-            }
-        }
+    @include navigation;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        filter: saturate(200%);
+    }
+    /* TITULO PRINCIPAL */
+    h1{
+        font-size: 128px;
+        position: absolute;
+        color: $color_white;
     }
 }

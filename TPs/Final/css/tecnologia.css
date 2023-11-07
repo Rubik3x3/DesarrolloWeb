@@ -26,18 +26,6 @@ header nav {
         header nav ul li a:hover {
           color: #9d4edd; }
 
-.contenedor-principal {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  /* TITULO PRINCIPAL */ }
-  .contenedor-principal img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    filter: saturate(200%); }
-  .contenedor-principal h1 {
-    font-size: 128px;
-    position: absolute;
-    color: #ffffff; }
+h1 {
+  text-align: start;
+  padding: 4%; }
