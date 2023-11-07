@@ -4,3 +4,7 @@
 header{
     @include navigation;
 }
+
+.contenedor-principal{
+    @include contenedor-principal;
+}

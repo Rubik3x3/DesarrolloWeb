@@ -4,4 +4,14 @@
   padding: 0;
   font-family: 'Abel', sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* NAV DE CADA PÁGINA */
+@keyframes titulo-principal {
+  0% {
+    text-shadow: 0px 0px 50px #ffffff; }
+  50% {
+    text-shadow: 0px 0px 35px #909090; }
+  100% {
+    text-shadow: 0px 0px 50px #ffffff; } }

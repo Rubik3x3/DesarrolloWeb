@@ -4,6 +4,10 @@
     font-family: 'Abel', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* NAV DE CADA PÁGINA */
 
 @mixin navigation{
@@ -14,6 +18,7 @@
         z-index: 100;
         position: fixed;
         background-color: #101010a6;
+        filter: blur(200%);
         ul{
             display: flex;
             flex-flow: row nowrap;
@@ -21,21 +26,64 @@
             li{
                 list-style: none;
                 padding: 20px;
-                a{
+                a {
+                    border-radius: 1px;
+                    box-shadow: inset 0 0 0 0 #00000000;
                     font-size: 24px;
-                    text-decoration: none;
                     color: $color_white;
-                    transition-duration: 300ms;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 
-                    &:hover{
-                        color: $color3;
+                    &:hover {
+                    
+                        color: $color_black;
+                        box-shadow: inset 200px 0 0 0 #ffffff90;
                     }
                 }
+
             }
         }
     }
 }
 
-@mixin button-simple{
+@mixin contenedor-principal{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    img{
+        user-select: none;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: saturate(150%);
+        
 
+    }
+    /* TITULO PRINCIPAL */
+    h1{
+        user-select: none;
+        z-index: 1;
+        opacity: 1;
+        font-size: 194px;
+        position: absolute;
+        color: $color_white;
+        font-family: 'Bebas Neue', sans-serif;
+        text-shadow: 0px 0px 50px $color_white;
+        animation: titulo-principal 3s linear infinite;
+    }
 }
+
+@keyframes titulo-principal{
+    0%{
+        text-shadow: 0px 0px 50px #ffffff;
+    }
+    50%{
+        text-shadow: 0px 0px 35px #909090;
+    }
+    100%{
+        text-shadow: 0px 0px 50px #ffffff;
+    }
+}
+

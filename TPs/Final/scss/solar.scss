@@ -7,7 +7,7 @@ header{
 }
 
 body{
-    background-color: black;
+    background-image: url(../assets/images/space-background.jpg);
 }
 
 .contenedor-principal{
@@ -25,16 +25,20 @@ body{
     position: relative;
 }
 
-
 .sol {
+    img{
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     position: absolute;
     top: 20em;
     left: 15em;
     width: 10em;
     height: 10em;
-    background-color: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 3em white;
+    box-shadow: 0 0 3em 1.5em rgb(255, 115, 0);
 }
 
 
@@ -45,7 +49,6 @@ body{
     border-width: 0.1em 0.1em 0.1em 0.1em;
     border-radius: 50%;
     &::before {
-        content: '';
         position: absolute;
         border-radius: 50%;
     }
@@ -99,9 +102,10 @@ body{
 .luna {
     top: 4.5em;
     right: 4.5em;
-    width: 8em;
-    height: 8em;
-    animation: orbit 2.7s linear infinite;
+    width: 9em;
+    height: 9em;
+    animation: orbit 20s linear infinite;
+    
     &::before {
         top: 0.8em;
         right: 0.2em;

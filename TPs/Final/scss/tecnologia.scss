@@ -3,7 +3,14 @@
 header{
     @include navigation;
 }
-h1{
-    text-align: start;
-    padding: 4%;
+.contenedor-principal{
+    @include contenedor-principal
+}
+.cont-text{
+    background-image: linear-gradient(to top, rgb(0, 0, 8), rgb(0, 0, 0));
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    color: #fff;
 }
