@@ -160,8 +160,8 @@ body {
   height: 75em;
   animation: orbit 75s linear infinite; }
   .jupiter img {
-    top: 9em;
-    right: 9em;
+    top: 8.5em;
+    right: 8.5em;
     width: 5em;
     height: 5em;
     animation: orbit 20s linear infinite; }
@@ -179,10 +179,10 @@ body {
     height: 4em;
     animation: orbit 20s linear infinite; }
   .saturno div {
-    top: 8.05em;
-    right: 8.05em;
-    width: 7em;
-    height: 7em;
+    top: 9em;
+    right: 9em;
+    width: 6em;
+    height: 6em;
     border-width: 1em 1em 1em 1em;
     border-color: silver; }
 
