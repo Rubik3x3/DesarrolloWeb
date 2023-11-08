@@ -8,3 +8,32 @@ header{
 .contenedor-principal{
     @include contenedor-principal;
 }
+
+.contenedor{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+
+    .contenedor__caja1{
+        height: 100vh;
+        background-color:$color_white;
+    }
+    .contenedor__caja2{
+        height: 100vh;
+        background-color: #fff;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .contenedor__caja3{
+        height: 100vh;
+        background-color: #fff;
+    }
+}
+
+footer{
+    @include footer;
+}

@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth; }
 
 /* NAV DE CADA PÁGINA */
+#logo-nav {
+  width: 75px;
+  height: 75px; }
+
 @keyframes titulo-principal {
   0% {
     text-shadow: 0px 0px 50px #ffffff; }

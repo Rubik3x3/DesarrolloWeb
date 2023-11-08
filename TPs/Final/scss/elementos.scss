@@ -10,6 +10,11 @@ html{
 
 /* NAV DE CADA PÁGINA */
 
+#logo-nav{
+    width: 75px;
+    height: 75px;
+}
+
 @mixin navigation{
 
     nav{
@@ -38,12 +43,22 @@ html{
                     &:hover {
                     
                         color: $color_black;
-                        box-shadow: inset 200px 0 0 0 #ffffff90;
+                        box-shadow: inset 200px 0 0 0 #ffffff;
                     }
                 }
 
             }
         }
+    }
+}
+
+@mixin footer{
+    width: 100%;
+    height: 100%;
+    div{
+        width: 100%;
+        height: 100vh;
+        background-color: #101010;
     }
 }
 
@@ -58,8 +73,6 @@ html{
         height: 100vh;
         object-fit: cover;
         filter: saturate(150%);
-        
-
     }
     /* TITULO PRINCIPAL */
     h1{
@@ -74,6 +87,8 @@ html{
         animation: titulo-principal 3s linear infinite;
     }
 }
+
+
 
 @keyframes titulo-principal{
     0%{

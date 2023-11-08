@@ -7,7 +7,7 @@ header{
 }
 
 body{
-    background-image: url(../assets/images/space-background.jpg);
+    background-color: #151515;
 }
 
 .contenedor-principal{
@@ -22,7 +22,7 @@ body{
     font-size: 10px;
     width: 40em;
     height: 40em;
-    position: relative;
+    position: absolute;
 }
 
 .sol {
@@ -30,7 +30,6 @@ body{
         border-radius: 50%;
         height: 100%;
         width: 100%;
-        object-fit: cover;
     }
     position: absolute;
     top: 20em;
@@ -42,15 +41,17 @@ body{
 }
 
 
-.tierra, .luna, .mercurio, .venus {
+.tierra, .luna, .mercurio, .venus, .marte {
     position: absolute;
     border-style: solid;
     border-color: #454545;
     border-width: 0.1em 0.1em 0.1em 0.1em;
     border-radius: 50%;
-    &::before {
+    img{
         position: absolute;
         border-radius: 50%;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -60,12 +61,11 @@ body{
     width: 20em;
     height: 20em;
     animation: orbit 29.3s linear infinite;
-    &::before {
+    img{
         top: 1.8em;
         right: 1.8em;
         width: 2em;
         height: 2em;
-        background: linear-gradient(red, orange);
     }
 }
 
@@ -75,24 +75,37 @@ body{
     width: 30em;
     height: 30em;
     animation: orbit 75s linear infinite;
-    &::before {
+    img{
         top: 2.8em;
         right: 2.8em;
         width: 3em;
         height: 3em;
-        background: linear-gradient(cyan, blue);
+    }
+}
+
+.marte {
+    top: -10em;
+    left: -15em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 75s linear infinite;
+    img{
+        top: 8.7em;
+        right: 8.7em;
+        width: 2.5em;
+        height: 2.5em;
     }
 }
 
 .tierra {
-    top: -5em;
-    left: -10em;
-    width: 60em;
-    height: 60em;
-    animation: orbit 121.6s linear infinite;
-    &::before {
-        top: 7.2em;
-        right: 7.2em;
+    top: 0em;
+    left: -5em;
+    width: 50em;
+    height: 50em;
+    animation: orbit 121.6s linear infinite; 
+    img{
+        top: 7em;
+        right: 7em;
         width: 3em;
         height: 3em;
         background: linear-gradient(cyan, blue);
@@ -100,15 +113,14 @@ body{
 }
 
 .luna {
-    top: 4.5em;
-    right: 4.5em;
+    top: 2.7em;
+    right: 2.7em;
     width: 9em;
     height: 9em;
-    animation: orbit 20s linear infinite;
-    
-    &::before {
-        top: 0.8em;
-        right: 0.2em;
+    animation: orbit 20s linear infinite; 
+    img{
+        top: 0.4em;
+        right: 1em;
         width: 1.2em;
         height: 1.2em;
         background-color: silver;

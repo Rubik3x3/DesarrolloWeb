@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth; }
 
 /* NAV DE CADA PÁGINA */
+#logo-nav {
+  width: 75px;
+  height: 75px; }
+
 @keyframes titulo-principal {
   0% {
     text-shadow: 0px 0px 50px #ffffff; }
@@ -40,10 +44,10 @@ header nav {
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
         header nav ul li a:hover {
           color: #101010;
-          box-shadow: inset 200px 0 0 0 #ffffff90; }
+          box-shadow: inset 200px 0 0 0 #ffffff; }
 
 body {
-  background-image: url(../assets/images/space-background.jpg); }
+  background-color: #151515; }
 
 .contenedor-principal {
   margin: 0;
@@ -56,7 +60,7 @@ body {
   font-size: 10px;
   width: 40em;
   height: 40em;
-  position: relative; }
+  position: absolute; }
 
 .sol {
   position: absolute;
@@ -69,18 +73,19 @@ body {
   .sol img {
     border-radius: 50%;
     height: 100%;
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
 
-.tierra, .luna, .mercurio, .venus {
+.tierra, .luna, .mercurio, .venus, .marte {
   position: absolute;
   border-style: solid;
   border-color: #454545;
   border-width: 0.1em 0.1em 0.1em 0.1em;
   border-radius: 50%; }
-  .tierra::before, .luna::before, .mercurio::before, .venus::before {
+  .tierra img, .luna img, .mercurio img, .venus img, .marte img {
     position: absolute;
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 100%;
+    width: 100%; }
 
 .mercurio {
   top: 15em;
@@ -88,12 +93,11 @@ body {
   width: 20em;
   height: 20em;
   animation: orbit 29.3s linear infinite; }
-  .mercurio::before {
+  .mercurio img {
     top: 1.8em;
     right: 1.8em;
     width: 2em;
-    height: 2em;
-    background: linear-gradient(red, orange); }
+    height: 2em; }
 
 .venus {
   top: 10em;
@@ -101,35 +105,46 @@ body {
   width: 30em;
   height: 30em;
   animation: orbit 75s linear infinite; }
-  .venus::before {
+  .venus img {
     top: 2.8em;
     right: 2.8em;
     width: 3em;
-    height: 3em;
-    background: linear-gradient(cyan, blue); }
+    height: 3em; }
+
+.marte {
+  top: -10em;
+  left: -15em;
+  width: 70em;
+  height: 70em;
+  animation: orbit 75s linear infinite; }
+  .marte img {
+    top: 8.7em;
+    right: 8.7em;
+    width: 2.5em;
+    height: 2.5em; }
 
 .tierra {
-  top: -5em;
-  left: -10em;
-  width: 60em;
-  height: 60em;
+  top: 0em;
+  left: -5em;
+  width: 50em;
+  height: 50em;
   animation: orbit 121.6s linear infinite; }
-  .tierra::before {
-    top: 7.2em;
-    right: 7.2em;
+  .tierra img {
+    top: 7em;
+    right: 7em;
     width: 3em;
     height: 3em;
     background: linear-gradient(cyan, blue); }
 
 .luna {
-  top: 4.5em;
-  right: 4.5em;
+  top: 2.7em;
+  right: 2.7em;
   width: 9em;
   height: 9em;
   animation: orbit 20s linear infinite; }
-  .luna::before {
-    top: 0.8em;
-    right: 0.2em;
+  .luna img {
+    top: 0.4em;
+    right: 1em;
     width: 1.2em;
     height: 1.2em;
     background-color: silver; }
