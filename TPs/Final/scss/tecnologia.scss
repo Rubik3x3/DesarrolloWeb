@@ -7,7 +7,7 @@ header{
     @include contenedor-principal
 }
 .contenedor{
-    background-image: linear-gradient(to top, rgb(0, 0, 8), rgb(0, 0, 0));
+    background-image: linear-gradient(to top, rgb(0, 0, 14), black);
     height: 100%;
     width: 100%;
 }
@@ -72,5 +72,4 @@ header{
         text-align: center;
         padding-top: 5.4%;
     }
-
 }

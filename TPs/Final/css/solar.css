@@ -173,8 +173,8 @@ body {
   height: 90em;
   animation: orbit 75s linear infinite; }
   .saturno img {
-    top: 10em;
-    right: 10em;
+    top: 11em;
+    right: 11em;
     width: 4em;
     height: 4em;
     animation: orbit 20s linear infinite; }
