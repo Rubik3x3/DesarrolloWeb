@@ -15,7 +15,7 @@ header{
     display: flex;
     padding: 5%;
     color: #fff;
-    p{
+    h5{
         text-align: center;
         padding-top: 5.4%;
     }
@@ -31,10 +31,46 @@ header{
     height: 100%;
         h1{
             padding-left: 5%;
+            padding-top: 1%;
         }
         p{
             padding-left: 5%;
-            padding-right: 5%;
+            padding-right: 8%;
             text-align: start;
         }
+        h3{
+            padding-left: 5%;
+            padding-top: 1%;
+        }
+        h5{
+            padding-left: 5%;
+            padding-right: 8%;
+            text-align: start;
+        }
+        #tex1{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+        }
+        #text2{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+        }
+}
+
+.cont-img__2{
+    display: block;
+    padding-left: 25%;
+    padding-top: 1.5%;
+}
+.cont-text__2{
+    display: flex;
+    padding: 5%;
+    color: #fff;
+    h5{
+        text-align: center;
+        padding-top: 5.4%;
+    }
+
 }

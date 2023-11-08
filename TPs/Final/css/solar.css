@@ -75,53 +75,43 @@ body {
     height: 100%;
     width: 100%; }
 
-.tierra, .luna, .mercurio, .venus, .marte {
+.mercurio, .venus, .tierra, .luna, .marte, .jupiter, .saturno, .urano, .neptuno, .aros {
   position: absolute;
   border-style: solid;
   border-color: #454545;
   border-width: 0.1em 0.1em 0.1em 0.1em;
   border-radius: 50%; }
-  .tierra img, .luna img, .mercurio img, .venus img, .marte img {
+  .mercurio img, .venus img, .tierra img, .luna img, .marte img, .jupiter img, .saturno img, .urano img, .neptuno img, .aros img {
     position: absolute;
     border-radius: 50%;
     height: 100%;
     width: 100%; }
 
 .mercurio {
-  top: 15em;
-  left: 10em;
-  width: 20em;
-  height: 20em;
+  top: 12.5em;
+  left: 7.5em;
+  width: 25em;
+  height: 25em;
   animation: orbit 29.3s linear infinite; }
   .mercurio img {
-    top: 1.8em;
-    right: 1.8em;
+    top: 2.6em;
+    right: 2.6em;
     width: 2em;
-    height: 2em; }
+    height: 2em;
+    animation: orbit 20s linear infinite; }
 
 .venus {
-  top: 10em;
-  left: 5em;
-  width: 30em;
-  height: 30em;
+  top: 7.5em;
+  left: 2.5em;
+  width: 35em;
+  height: 35em;
   animation: orbit 75s linear infinite; }
   .venus img {
-    top: 2.8em;
-    right: 2.8em;
-    width: 3em;
-    height: 3em; }
-
-.marte {
-  top: -10em;
-  left: -15em;
-  width: 70em;
-  height: 70em;
-  animation: orbit 75s linear infinite; }
-  .marte img {
-    top: 8.7em;
-    right: 8.7em;
-    width: 2.5em;
-    height: 2.5em; }
+    top: 3.8em;
+    right: 3.8em;
+    width: 2.4em;
+    height: 2.4em;
+    animation: orbit 20s linear infinite; }
 
 .tierra {
   top: 0em;
@@ -130,25 +120,102 @@ body {
   height: 50em;
   animation: orbit 121.6s linear infinite; }
   .tierra img {
-    top: 7em;
-    right: 7em;
+    top: 5.7em;
+    right: 5.7em;
     width: 3em;
     height: 3em;
-    background: linear-gradient(cyan, blue); }
+    animation: orbit 20s linear infinite; }
 
 .luna {
-  top: 2.7em;
-  right: 2.7em;
-  width: 9em;
-  height: 9em;
+  top: 3.7em;
+  right: 3.7em;
+  width: 7em;
+  height: 7em;
   animation: orbit 20s linear infinite; }
   .luna img {
-    top: 0.4em;
-    right: 1em;
+    top: 0.1em;
+    right: 0.7em;
     width: 1.2em;
     height: 1.2em;
-    background-color: silver; }
+    background-color: silver;
+    animation: orbit 20s linear infinite; }
+
+.marte {
+  top: -6em;
+  left: -11em;
+  width: 62.5em;
+  height: 62.5em;
+  animation: orbit 75s linear infinite; }
+  .marte img {
+    top: 7.8em;
+    right: 7.8em;
+    width: 2.5em;
+    height: 2.5em;
+    animation: orbit 20s linear infinite; }
+
+.jupiter {
+  top: -12em;
+  left: -17em;
+  width: 75em;
+  height: 75em;
+  animation: orbit 75s linear infinite; }
+  .jupiter img {
+    top: 9em;
+    right: 9em;
+    width: 5em;
+    height: 5em;
+    animation: orbit 20s linear infinite; }
+
+.saturno {
+  top: -19em;
+  left: -25em;
+  width: 90em;
+  height: 90em;
+  animation: orbit 75s linear infinite; }
+  .saturno img {
+    top: 10em;
+    right: 10em;
+    width: 4em;
+    height: 4em;
+    animation: orbit 20s linear infinite; }
+  .saturno div {
+    top: 8.05em;
+    right: 8.05em;
+    width: 7em;
+    height: 7em;
+    border-width: 1em 1em 1em 1em;
+    border-color: silver; }
+
+.urano {
+  top: -29em;
+  left: -35em;
+  width: 110em;
+  height: 110em;
+  animation: orbit 75s linear infinite; }
+  .urano img {
+    top: 9em;
+    right: 9em;
+    width: 4em;
+    height: 4em;
+    animation: orbit 20s linear infinite; }
+
+.neptuno {
+  top: -12em;
+  left: -17em;
+  width: 75em;
+  height: 75em;
+  animation: orbit 75s linear infinite; }
+  .neptuno img {
+    top: 9em;
+    right: 9em;
+    width: 5em;
+    height: 5em;
+    animation: orbit 20s linear infinite; }
 
 @keyframes orbit {
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes planeta {
   to {
     transform: rotate(360deg); } }

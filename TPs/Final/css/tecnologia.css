@@ -65,7 +65,7 @@ header nav {
     font-size: 194px;
     position: absolute;
     color: #ffffff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Jura', sans-serif;
     text-shadow: 0px 0px 50px #ffffff;
     animation: titulo-principal 3s linear infinite; }
 
@@ -78,7 +78,7 @@ header nav {
   display: flex;
   padding: 5%;
   color: #fff; }
-  .cont-text p {
+  .cont-text h5 {
     text-align: center;
     padding-top: 5.4%; }
 
@@ -90,8 +90,37 @@ header nav {
   color: #fff;
   height: 100%; }
   .cont-satelite h1 {
-    padding-left: 5%; }
+    padding-left: 5%;
+    padding-top: 1%; }
   .cont-satelite p {
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 8%;
     text-align: start; }
+  .cont-satelite h3 {
+    padding-left: 5%;
+    padding-top: 1%; }
+  .cont-satelite h5 {
+    padding-left: 5%;
+    padding-right: 8%;
+    text-align: start; }
+  .cont-satelite #tex1 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start; }
+  .cont-satelite #text2 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start; }
+
+.cont-img__2 {
+  display: block;
+  padding-left: 25%;
+  padding-top: 1.5%; }
+
+.cont-text__2 {
+  display: flex;
+  padding: 5%;
+  color: #fff; }
+  .cont-text__2 h5 {
+    text-align: center;
+    padding-top: 5.4%; }

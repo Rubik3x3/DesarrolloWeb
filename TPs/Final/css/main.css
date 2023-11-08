@@ -65,7 +65,7 @@ header nav {
     font-size: 194px;
     position: absolute;
     color: #ffffff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Jura', sans-serif;
     text-shadow: 0px 0px 50px #ffffff;
     animation: titulo-principal 3s linear infinite; }
 
@@ -89,7 +89,62 @@ header nav {
 footer {
   width: 100%;
   height: 100%; }
-  footer div {
+  footer .contenedor-footer {
     width: 100%;
-    height: 100vh;
-    background-color: #101010; }
+    height: 75vh;
+    background-color: #101010;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.25fr;
+    grid-template-areas: "logo" "caja1" "copyright"; }
+    footer .contenedor-footer img {
+      grid-area: logo;
+      width: 885px;
+      height: 280px;
+      align-self: center;
+      justify-self: center; }
+    footer .contenedor-footer #contenedor-footer__caja1 {
+      grid-area: caja1;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: start;
+      justify-content: space-evenly; }
+      footer .contenedor-footer #contenedor-footer__caja1 div {
+        display: flex;
+        flex-flow: column nowrap; }
+      footer .contenedor-footer #contenedor-footer__caja1 p {
+        color: #aaa; }
+      footer .contenedor-footer #contenedor-footer__caja1 h2 {
+        color: #ffffff;
+        font-size: 24px; }
+      footer .contenedor-footer #contenedor-footer__caja1 a {
+        color: #cccccc;
+        font-size: 18px;
+        text-decoration: none;
+        transition-duration: 200ms; }
+        footer .contenedor-footer #contenedor-footer__caja1 a:hover {
+          color: #ffffff; }
+      footer .contenedor-footer #contenedor-footer__caja1 .boton {
+        background-color: #202020;
+        width: 50%;
+        text-align: center;
+        box-shadow: inset 0 0 0 0 #00000000;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 5px;
+        text-decoration: none;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out; }
+        footer .contenedor-footer #contenedor-footer__caja1 .boton:hover {
+          color: #101010;
+          box-shadow: inset 200px 0 0 0 #ffffff; }
+    footer .contenedor-footer #contenedor-footer__copyright {
+      background-color: #151515;
+      grid-area: copyright;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+      footer .contenedor-footer #contenedor-footer__copyright p {
+        margin-top: 15px;
+        color: #aaa;
+        font-size: 18px; }
