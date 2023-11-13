@@ -8,3 +8,11 @@ header{
 .contenedor-principal{
     @include contenedor-principal;
 }
+
+body{
+    background-color: $color_black;
+    
+    
+}
+
+

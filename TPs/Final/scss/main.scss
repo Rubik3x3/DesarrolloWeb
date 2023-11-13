@@ -5,32 +5,99 @@ header{
     @include navigation;
 }
 
+body{
+    background-color: #101010
+}
+
 .contenedor-principal{
     @include contenedor-principal;
 }
 
 .contenedor{
-    background-color: #ffffff;
     height: 100%;
     width: 100%;
+    background-color: #101010;
 
     .contenedor__caja1{
+        background-color: #101010;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        @include imagen-scroll;
+        animation-name: mostrar;
         height: 100vh;
-        background-color:$color_white;
+        h1{
+            margin-top: 15px;
+            color: $color_white;
+            font-size: 48px;
+        }
+        p{
+            margin-top: 25px;
+            color: #ccc;
+            text-align: justify;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        div{
+            position: relative;
+            @include card;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: stretch;
+            transition-duration: 500ms;
+            &:hover{
+                background-color:$colorp;
+                border: 1.5px solid #ffffff96;
+            }
+        }
     }
     .contenedor__caja2{
+        @include imagen-scroll;
         height: 100vh;
         background-color: #fff;
 
         img{
             width: 100%;
             height: 100%;
+            
         }
     }
 
     .contenedor__caja3{
+        background-color: #101010;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        @include imagen-scroll;
+        animation-name: mostrar;
         height: 100vh;
-        background-color: #fff;
+        h1{
+            margin-top: 15px;
+            color: $color_white;
+            font-size: 48px;
+        }
+        p{
+            margin-top: 25px;
+            color: #ccc;
+            text-align: justify;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        div{
+            position: relative;
+            @include card;
+            width: 85vw;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: stretch;
+            transition-duration: 500ms;
+            &:hover{
+                background-color:$colorp;
+                border: 1.5px solid #ffffff96;
+            }
+        }
     }
 }
 

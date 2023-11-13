@@ -7,12 +7,12 @@ header{
 }
 
 body{
-    background-color: #151515;
+    background-color: #202020;
 }
 
 .contenedor-principal{
     margin: 0;
-    height: 120vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,13 +60,13 @@ body{
     left: 7.5em;
     width: 25em;
     height: 25em;
-    animation: orbit 29.3s linear infinite;
+    animation: orbita 30s linear infinite;
     img{
         top: 2.6em;
         right: 2.6em;
         width: 2em;
         height: 2em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -75,13 +75,13 @@ body{
     left: 2.5em;
     width: 35em;
     height: 35em;
-    animation: orbit 75s linear infinite;
+    animation: orbita 60s linear infinite;
     img{
         top: 3.8em;
         right: 3.8em;
         width: 2.4em;
         height: 2.4em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -90,13 +90,13 @@ body{
     left: -5em;
     width: 50em;
     height: 50em;
-    animation: orbit 121.6s linear infinite; 
+    animation: orbita 90s linear infinite; 
     img{
         top: 5.7em;
         right: 5.7em;
         width: 3em;
         height: 3em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -105,14 +105,14 @@ body{
     right: 3.7em;
     width: 7em;
     height: 7em;
-    animation: orbit 20s linear infinite; 
+    animation: orbita 20s linear infinite; 
     img{
         top: 0.1em;
         right: 0.7em;
         width: 1.2em;
         height: 1.2em;
         background-color: silver;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -121,13 +121,13 @@ body{
     left: -11em;
     width: 62.5em;
     height: 62.5em;
-    animation: orbit 75s linear infinite;
+    animation: orbita 120s linear infinite;
     img{
         top: 7.8em;
         right: 7.8em;
         width: 2.5em;
         height: 2.5em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -136,13 +136,13 @@ body{
     left: -17em;
     width: 75em;
     height: 75em;
-    animation: orbit 75s linear infinite;
+    animation: orbita 150s linear infinite;
     img{
         top: 8.5em;
         right: 8.5em;
         width: 5em;
         height: 5em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
 }
 
@@ -151,13 +151,13 @@ body{
     left: -25em;
     width: 90em;
     height: 90em;
-    animation: orbit 75s linear infinite;
+    animation: orbita 180s linear infinite;
     img{
         top: 11em;
         right: 11em;
         width: 4em;
         height: 4em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
     }
     div{
         top: 9em;
@@ -174,39 +174,41 @@ body{
     left: -35em;
     width: 110em;
     height: 110em;
-    animation: orbit 75s linear infinite;
+    animation: orbita 210s linear infinite;
     img{
-        top: 9em;
-        right: 9em;
+        top: 14em;
+        right: 14em;
         width: 4em;
         height: 4em;
-        animation: orbit 20s linear infinite; 
+        animation: orbita 15s linear infinite; 
+    }
+    div{
+        top: 12.7em;
+        right: 12.7em;
+        width: 5em;
+        height: 5em;
+        border-width: 0.8em 0.8em 0.8em 0.8em;
+        border-color: silver;
     }
 }
 
 .neptuno {
-    top: -12em;
-    left: -17em;
-    width: 75em;
-    height: 75em;
-    animation: orbit 75s linear infinite;
+    top: -36.5em;
+    left: -42.5em;
+    width: 125em;
+    height: 125em;
+    animation: orbita 250s linear infinite;
     img{
-        top: 9em;
-        right: 9em;
-        width: 5em;
-        height: 5em;
-        animation: orbit 20s linear infinite; 
+        top: 16.3em;
+        right: 16.3em;
+        width: 4em;
+        height: 4em;
+        animation: orbita 15s linear infinite; 
     }
 }
 
 
-@keyframes orbit {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes planeta {
+@keyframes orbita {
     to {
         transform: rotate(360deg);
     }

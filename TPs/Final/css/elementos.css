@@ -19,3 +19,11 @@ html {
     text-shadow: 0px 0px 35px #909090; }
   100% {
     text-shadow: 0px 0px 50px #ffffff; } }
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+    scale: 50%; }
+  to {
+    opacity: 1;
+    scale: 100%; } }

@@ -23,7 +23,8 @@ html{
         z-index: 100;
         position: fixed;
         background-color: #101010a6;
-        filter: blur(200%);
+        backdrop-filter: blur(5px);
+
         ul{
             display: flex;
             flex-flow: row nowrap;
@@ -33,23 +34,53 @@ html{
                 padding: 20px;
                 a {
                     border-radius: 1px;
-                    box-shadow: inset 0 0 0 0 #00000000;
                     font-size: 24px;
                     color: $color_white;
                     padding: 10px;
+                    position: relative;
                     text-decoration: none;
-                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                    transition-duration: 300ms;
 
-                    &:hover {
-                    
-                        color: $color_black;
-                        box-shadow: inset 200px 0 0 0 #ffffff;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 4px;
+                        background-color: $colorp;
+                        bottom: 0;
+                        left: 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform .3s ease-in-out;
+                    }
+                    &:hover::before {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }
+                    &:hover{
+                        color: $colorp;
                     }
                 }
 
             }
         }
     }
+}
+@mixin card{
+    position: relative;
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: #4141414f;
+    border: 1.5px solid #ffffff17;
+    user-select: none;
 }
 
 @mixin footer{
@@ -111,6 +142,7 @@ html{
         }
 
         #contenedor-footer__copyright{
+            margin-top: 15px;
             background-color: #151515;
             grid-area: copyright;
             display: flex;
@@ -143,7 +175,7 @@ html{
         user-select: none;
         z-index: 1;
         opacity: 1;
-        font-size: 194px;
+        font-size: 162px;
         position: absolute;
         color: $color_white;
         font-family: 'Jura', sans-serif;
@@ -164,6 +196,29 @@ html{
     100%{
         text-shadow: 0px 0px 50px #ffffff;
     }
+}
+
+@mixin imagen-scroll{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: mostrar;
+
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both;
+}
+
+@keyframes mostrar {
+    from{
+        opacity: 0;
+        scale: 50%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+    
 }
 
 @mixin button-simple{

@@ -7,7 +7,7 @@ header{
     @include contenedor-principal
 }
 .contenedor{
-    background-image: linear-gradient(to top, #101010, black);
+    background-image: linear-gradient(to top, rgb(0, 0, 5), black);
     height: 100%;
     width: 100%;
 }
@@ -59,10 +59,10 @@ header{
         }
 }
 
-.cont-img__2{
+#carouselExampleIndicators{
     display: block;
-    padding-left: 25%;
     padding-top: 1.5%;
+    width: 50%;
 }
 .cont-text__2{
     display: flex;
@@ -72,4 +72,7 @@ header{
         text-align: center;
         padding-top: 5.4%;
     }
+}
+footer{
+    @include footer;
 }
