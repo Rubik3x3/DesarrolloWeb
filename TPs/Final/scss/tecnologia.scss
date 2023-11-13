@@ -13,16 +13,18 @@ header{
 }
 .cont-text{
     display: flex;
-    padding: 5%;
+    padding: 1%;
     color: #fff;
     h5{
         text-align: center;
         padding-top: 5.4%;
     }
-
+    @include imagen-scroll;
+    @include card;
 }
 .cont-img{
     padding-left: 5%;
+    padding-right: 5%;
 
 }
 .cont-satelite{
@@ -63,6 +65,7 @@ header{
     display: block;
     padding-top: 1.5%;
     width: 50%;
+    @include imagen-scroll;
 }
 .cont-text__2{
     display: flex;

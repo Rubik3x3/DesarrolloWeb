@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth; }
 
+body {
+  background-color: #101010; }
+
 /* NAV DE CADA PÁGINA */
 #logo-nav {
   width: 75px;
@@ -34,7 +37,8 @@ header nav {
   z-index: 100;
   position: fixed;
   background-color: #101010a6;
-  backdrop-filter: blur(5px); }
+  backdrop-filter: blur(5px);
+  transition: top 0.3s; }
   header nav ul {
     display: flex;
     flex-flow: row nowrap;
@@ -98,14 +102,34 @@ header nav {
 
 .cont-text {
   display: flex;
-  padding: 5%;
-  color: #fff; }
+  padding: 1%;
+  color: #fff;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: mostrar;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both;
+  position: relative;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background-color: #4141414f;
+  border: 1.5px solid #ffffff17;
+  user-select: none; }
   .cont-text h5 {
     text-align: center;
     padding-top: 5.4%; }
 
 .cont-img {
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-right: 5%; }
 
 .cont-satelite {
   display: block;
@@ -137,7 +161,13 @@ header nav {
 #carouselExampleIndicators {
   display: block;
   padding-top: 1.5%;
-  width: 50%; }
+  width: 50%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: mostrar;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both; }
 
 .cont-text__2 {
   display: flex;
@@ -179,7 +209,7 @@ footer {
         color: #ffffff;
         font-size: 24px; }
       footer .contenedor-footer #contenedor-footer__caja1 a {
-        color: #cccccc;
+        color: #aaa;
         font-size: 18px;
         text-decoration: none;
         transition-duration: 200ms; }
@@ -199,7 +229,7 @@ footer {
           color: #101010;
           box-shadow: inset 200px 0 0 0 #ffffff; }
     footer .contenedor-footer #contenedor-footer__copyright {
-      margin-top: 15px;
+      margin-top: 25px;
       background-color: #151515;
       grid-area: copyright;
       display: flex;

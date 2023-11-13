@@ -26,11 +26,13 @@
     <title>Astronomía</title>
 
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
+    
 
     <header>
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Estudio</a></li>
@@ -42,6 +44,8 @@
             </ul>
         </nav>
     </header>
+
+    
 
     <div class="contenedor-principal">
         <h1>ASTRONOMÍA</h1>
@@ -113,4 +117,18 @@
     </footer>
     
 </body>
+
+<script>
+    var scrollAnterior = window.pageYOffset;
+    window.onscroll = function() {
+    var scrollActual = window.pageYOffset;
+    if (scrollAnterior > scrollActual) {
+        document.getElementById("nav").style.top = "0";
+    } else {
+        document.getElementById("nav").style.top = "-75px";
+    }
+    scrollAnterior = scrollActual;
+    }
+</script>
+
 </html> 
