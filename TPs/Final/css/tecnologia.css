@@ -102,7 +102,7 @@ header nav {
 
 .cont-text {
   display: flex;
-  padding: 1%;
+  padding: 5%;
   color: #fff;
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -124,8 +124,7 @@ header nav {
   border: 1.5px solid #ffffff17;
   user-select: none; }
   .cont-text h5 {
-    text-align: center;
-    padding-top: 5.4%; }
+    text-align: center; }
 
 .cont-img {
   padding-left: 5%;

@@ -13,11 +13,10 @@ header{
 }
 .cont-text{
     display: flex;
-    padding: 1%;
+    padding: 5%;
     color: #fff;
     h5{
         text-align: center;
-        padding-top: 5.4%;
     }
     @include imagen-scroll;
     @include card;
