@@ -12,14 +12,25 @@ header{
     width: 100%;
 }
 .cont-text{
-    display: flex;
     padding: 5%;
     color: #fff;
     h5{
         text-align: center;
     }
     @include imagen-scroll;
-    @include card;
+    position: relative;
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: #4141414f;
+    border: 1.5px solid #ffffff17;
+    user-select: none;
 }
 .cont-img{
     padding-left: 5%;
