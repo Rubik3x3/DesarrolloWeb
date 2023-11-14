@@ -9,13 +9,42 @@ header{
     @include contenedor-principal;
 }
 
-body{
+.contenedor-principal{
     background-color: $color_black;
-    
-    
 }
 
-/*cambiar colores*/
+.denominacion{
+    background-color: $color_black;
+   
+}
+
+p{
+    color: $color_white;
+}
+.Creacion-de-cuerpos-celestes{
+    background-color: $color_black;
+}
+
+.Planetas-y-estrellas{
+    background-color: $color_black;
+
+}
+
+.ciclos{
+    background-color: $color_black;
+}
+.fenomenos{
+    background-color: $color_black;
+}
+.Agujeros-negros{
+    
+    background-color: $color_black;
+}
+h2{
+    color: $color_white;
+}
+
+/*cambiar colores(CARDS)   y demas cosas */
 .cartas-principales {
     border: none;
     margin-top: 50px;
@@ -43,15 +72,15 @@ body{
         transform: rotateX(0deg) rotateY(0deg);
         box-shadow: 15px 15px 25px 0px rgba(0,0,0,0);
         img{
-            filter: saturate(250%) grayscale(0%);
-            box-shadow: 5px 5px 25px 0px rgba(0,0,0,0);
+            filter: saturate(200%) grayscale(0%);
+            box-shadow: 5px 5px 25px 0px rgba(107, 113, 127, 0.8);
         }
         h5{
-            text-shadow: 5px 5px 10px rgba(0,0,0,0);
+            text-shadow: 5px 5px 10px rgba(107, 113, 127, 0.8);
             color: #ffffff;
         }
         p{
-            text-shadow: 5px 5px 10px  rgba(0,0,0,0);
+            text-shadow: 5px 5px 10px  rgba(107, 113, 127, 0.8);
             color: #ffffff;
         }
     }

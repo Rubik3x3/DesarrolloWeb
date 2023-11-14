@@ -31,11 +31,14 @@ header{
     background-color: #4141414f;
     border: 1.5px solid #ffffff17;
     user-select: none;
+    margin: 2% 0% 2% 0%;
+    img{
+        border-radius: 30px;
+    }
 }
 .cont-img{
     padding-left: 5%;
     padding-right: 5%;
-
 }
 .cont-satelite{
     display: block;
@@ -69,13 +72,19 @@ header{
             padding-right: 9%;
             text-align: start;
         }
+    @include imagen-scroll;
 }
 
 #carouselExampleIndicators{
     display: block;
     padding-top: 1.5%;
-    width: 50%;
+    width: 70%;
     @include imagen-scroll;
+    img{
+        width: 659px;
+        height: 843px;
+        border-radius: 30px;
+    }
 }
 .cont-text__2{
     display: flex;
@@ -85,6 +94,7 @@ header{
         text-align: center;
         padding-top: 5.4%;
     }
+    @include imagen-scroll;
 }
 footer{
     @include footer;
