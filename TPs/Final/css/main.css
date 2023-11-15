@@ -23,10 +23,40 @@ body {
   100% {
     text-shadow: 0px 0px 50px #ffffff; } }
 
+@keyframes mostrarD {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarI {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarA {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
 @keyframes mostrar {
   from {
     opacity: 0;
-    scale: 50%; }
+    scale: 15%; }
   to {
     opacity: 1;
     scale: 100%; } }
@@ -106,12 +136,6 @@ header nav {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    animation-name: mostrar;
-    animation-range: entry 25% cover 35%;
-    animation-fill-mode: both;
     animation-name: mostrar;
     height: 100vh; }
     .contenedor .contenedor__caja1 img {
@@ -149,12 +173,26 @@ header nav {
         box-shadow: 0px 0px 50px #7b2cbf; }
       .contenedor .contenedor__caja1 div:hover img {
         box-shadow: 0px 0px 25px #240046; }
+    .contenedor .contenedor__caja1 #contenedor__caja1_card1 {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      animation-timeline: --image;
+      animation-name: mostrarI;
+      animation-range: entry 50% cover 35%;
+      animation-fill-mode: both; }
+    .contenedor .contenedor__caja1 #contenedor__caja1_card2 {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      animation-timeline: --image;
+      animation-name: mostrarD;
+      animation-range: entry 50% cover 35%;
+      animation-fill-mode: both; }
   .contenedor .contenedor__caja2 {
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
-    animation-name: mostrar;
-    animation-range: entry 25% cover 35%;
+    animation-name: mostrarA;
+    animation-range: entry 50% cover 35%;
     animation-fill-mode: both;
     height: 100vh;
     background-color: #fff; }
@@ -167,12 +205,6 @@ header nav {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    animation-name: mostrar;
-    animation-range: entry 25% cover 35%;
-    animation-fill-mode: both;
     animation-name: mostrar;
     height: 100vh; }
     .contenedor .contenedor__caja3 h1 {
@@ -186,6 +218,12 @@ header nav {
       margin-left: 30px;
       margin-right: 30px; }
     .contenedor .contenedor__caja3 div {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      animation-timeline: --image;
+      animation-name: mostrarA;
+      animation-range: entry 50% cover 35%;
+      animation-fill-mode: both;
       position: relative;
       position: relative;
       width: 40vw;

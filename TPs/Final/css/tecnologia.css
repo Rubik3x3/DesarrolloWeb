@@ -23,10 +23,40 @@ body {
   100% {
     text-shadow: 0px 0px 50px #ffffff; } }
 
+@keyframes mostrarD {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarI {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarA {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
 @keyframes mostrar {
   from {
     opacity: 0;
-    scale: 50%; }
+    scale: 15%; }
   to {
     opacity: 1;
     scale: 100%; } }
@@ -97,7 +127,7 @@ header nav {
     animation: titulo-principal 3s linear infinite; }
 
 .contenedor {
-  background-image: linear-gradient(to top, #000005, black);
+  background-image: linear-gradient(to top, #101010, black);
   height: 100%;
   width: 100%; }
 
@@ -111,23 +141,23 @@ header nav {
   animation-range: entry 25% cover 35%;
   animation-fill-mode: both;
   position: relative;
-  width: 40vw;
-  height: 90vh;
   display: flex;
+  margin: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 25px;
   border-radius: 10px;
   backdrop-filter: blur(30px);
   background-color: #4141414f;
   border: 1.5px solid #ffffff17;
-  user-select: none;
-  margin: 2% 0% 2% 0%; }
+  user-select: none; }
   .cont-text h5 {
     text-align: center; }
   .cont-text img {
-    border-radius: 30px; }
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px; }
 
 .cont-img {
   padding-left: 5%;
@@ -145,26 +175,62 @@ header nav {
   animation-fill-mode: both; }
   .cont-satelite h1 {
     padding-left: 5%;
-    padding-top: 1%; }
+    padding-top: 1%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-satelite p {
     padding-left: 5%;
     padding-right: 8%;
-    text-align: start; }
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-satelite h3 {
     padding-left: 5%;
-    padding-top: 1%; }
+    padding-top: 1%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-satelite h5 {
     padding-left: 5%;
     padding-right: 8%;
-    text-align: start; }
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-satelite #tex1 {
     padding-left: 3%;
     padding-right: 9%;
-    text-align: start; }
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-satelite #text2 {
     padding-left: 3%;
     padding-right: 9%;
-    text-align: start; }
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
 
 #carouselExampleIndicators {
   display: block;
@@ -190,10 +256,32 @@ header nav {
   animation-timeline: --image;
   animation-name: mostrar;
   animation-range: entry 25% cover 35%;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  position: relative;
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background-color: #4141414f;
+  border: 1.5px solid #ffffff17;
+  user-select: none; }
   .cont-text__2 h5 {
     text-align: center;
-    padding-top: 5.4%; }
+    padding-top: 5.4%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-text__2 img {
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px; }
 
 footer {
   width: 100%;

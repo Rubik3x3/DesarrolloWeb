@@ -7,7 +7,7 @@ header{
     @include contenedor-principal
 }
 .contenedor{
-    background-image: linear-gradient(to top, rgb(0, 0, 5), black);
+    background-image: linear-gradient(to top, #101010, black);
     height: 100%;
     width: 100%;
 }
@@ -19,21 +19,21 @@ header{
     }
     @include imagen-scroll;
     position: relative;
-    width: 40vw;
-    height: 90vh;
     display: flex;
+    margin: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 25px;
     border-radius: 10px;
     backdrop-filter: blur(30px);
     background-color: #4141414f;
     border: 1.5px solid #ffffff17;
     user-select: none;
-    margin: 2% 0% 2% 0%;
     img{
-        border-radius: 30px;
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 .cont-img{
@@ -47,30 +47,36 @@ header{
         h1{
             padding-left: 5%;
             padding-top: 1%;
+            @include imagen-scroll;
         }
         p{
             padding-left: 5%;
             padding-right: 8%;
             text-align: start;
+            @include imagen-scroll;
         }
         h3{
             padding-left: 5%;
             padding-top: 1%;
+            @include imagen-scroll;
         }
         h5{
             padding-left: 5%;
             padding-right: 8%;
             text-align: start;
+            @include imagen-scroll;
         }
         #tex1{
             padding-left: 3%;
             padding-right: 9%;
             text-align: start;
+            @include imagen-scroll;
         }
         #text2{
             padding-left: 3%;
             padding-right: 9%;
             text-align: start;
+            @include imagen-scroll;
         }
     @include imagen-scroll;
 }
@@ -93,8 +99,26 @@ header{
     h5{
         text-align: center;
         padding-top: 5.4%;
+        @include imagen-scroll;
     }
     @include imagen-scroll;
+    position: relative;
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: #4141414f;
+    border: 1.5px solid #ffffff17;
+    user-select: none;
+    img{
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 footer{
     @include footer;

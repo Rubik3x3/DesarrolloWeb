@@ -23,10 +23,40 @@ body {
   100% {
     text-shadow: 0px 0px 50px #ffffff; } }
 
+@keyframes mostrarD {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarI {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes mostrarA {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
 @keyframes mostrar {
   from {
     opacity: 0;
-    scale: 50%; }
+    scale: 15%; }
   to {
     opacity: 1;
     scale: 100%; } }
@@ -93,8 +123,8 @@ body {
   position: absolute;
   top: 20em;
   left: 15em;
-  width: 10em;
-  height: 10em;
+  width: 7em;
+  height: 7em;
   border-radius: 50%;
   box-shadow: 0 0 3em 1.5em #ff7300; }
   .sol img {
@@ -115,10 +145,10 @@ body {
     width: 100%; }
 
 .mercurio {
-  top: 12.5em;
-  left: 7.5em;
-  width: 25em;
-  height: 25em;
+  top: 15.5em;
+  left: 10.5em;
+  width: 15em;
+  height: 15em;
   animation: orbita 30s linear infinite; }
   .mercurio img {
     top: 2.6em;
@@ -128,10 +158,10 @@ body {
     animation: orbita 15s linear infinite; }
 
 .venus {
-  top: 7.5em;
-  left: 2.5em;
-  width: 35em;
-  height: 35em;
+  top: 10.5em;
+  left: 5.5em;
+  width: 25em;
+  height: 25em;
   animation: orbita 60s linear infinite; }
   .venus img {
     top: 3.8em;
@@ -141,10 +171,10 @@ body {
     animation: orbita 15s linear infinite; }
 
 .tierra {
-  top: 0em;
-  left: -5em;
-  width: 50em;
-  height: 50em;
+  top: 3em;
+  left: -2em;
+  width: 40em;
+  height: 40em;
   animation: orbita 90s linear infinite; }
   .tierra img {
     top: 5.7em;
@@ -168,10 +198,10 @@ body {
     animation: orbita 15s linear infinite; }
 
 .marte {
-  top: -6em;
-  left: -11em;
-  width: 62.5em;
-  height: 62.5em;
+  top: -3em;
+  left: -8em;
+  width: 52.5em;
+  height: 52.5em;
   animation: orbita 120s linear infinite; }
   .marte img {
     top: 7.8em;
@@ -181,10 +211,10 @@ body {
     animation: orbita 15s linear infinite; }
 
 .jupiter {
-  top: -12em;
-  left: -17em;
-  width: 75em;
-  height: 75em;
+  top: -9em;
+  left: -14em;
+  width: 65em;
+  height: 65em;
   animation: orbita 150s linear infinite; }
   .jupiter img {
     top: 8.5em;
@@ -194,10 +224,10 @@ body {
     animation: orbita 15s linear infinite; }
 
 .saturno {
-  top: -19em;
-  left: -25em;
-  width: 90em;
-  height: 90em;
+  top: -16em;
+  left: -22em;
+  width: 80em;
+  height: 80em;
   animation: orbita 180s linear infinite; }
   .saturno img {
     top: 11em;
@@ -214,10 +244,10 @@ body {
     border-color: silver; }
 
 .urano {
-  top: -29em;
-  left: -35em;
-  width: 110em;
-  height: 110em;
+  top: -26em;
+  left: -32em;
+  width: 100em;
+  height: 100em;
   animation: orbita 210s linear infinite; }
   .urano img {
     top: 14em;
@@ -234,10 +264,10 @@ body {
     border-color: silver; }
 
 .neptuno {
-  top: -36.5em;
-  left: -42.5em;
-  width: 125em;
-  height: 125em;
+  top: -33.5em;
+  left: -39.5em;
+  width: 115em;
+  height: 115em;
   animation: orbita 250s linear infinite; }
   .neptuno img {
     top: 16.3em;
