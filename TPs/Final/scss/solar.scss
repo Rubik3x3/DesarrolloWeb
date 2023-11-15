@@ -1,4 +1,4 @@
-@import 'elementos';
+a@import 'elementos';
 @import 'colors';
 
 
@@ -7,7 +7,7 @@ header{
 }
 
 body{
-    background-color: #202020;
+    background-color: #252525;
 }
 
 .contenedor-principal{
@@ -172,8 +172,8 @@ body{
 .urano {
     top: -26em;
     left: -32em;
-    width: 100em;
-    height: 100em;
+    width: 95em;
+    height: 95em;
     animation: orbita 210s linear infinite;
     img{
         top: 14em;
@@ -195,8 +195,8 @@ body{
 .neptuno {
     top: -33.5em;
     left: -39.5em;
-    width: 115em;
-    height: 115em;
+    width: 110em;
+    height: 110em;
     animation: orbita 250s linear infinite;
     img{
         top: 16.3em;

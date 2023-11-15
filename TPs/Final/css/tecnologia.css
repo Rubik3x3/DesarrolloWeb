@@ -49,6 +49,9 @@ body {
   0% {
     opacity: 0;
     transform: translateY(100px); }
+  65% {
+    opacity: 0.5;
+    transform: translateY(100px); }
   100% {
     opacity: 1;
     transform: translateY(0px); } }
@@ -270,7 +273,7 @@ header nav {
   user-select: none; }
   .cont-text__2 h5 {
     text-align: center;
-    padding-top: 5.4%;
+    padding-top: 1%;
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
@@ -279,9 +282,11 @@ header nav {
     animation-fill-mode: both; }
   .cont-text__2 img {
     border-radius: 20px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px; }
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 25px;
+    width: 40%;
+    height: 100%; }
 
 footer {
   width: 100%;

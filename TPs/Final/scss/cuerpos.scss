@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'elementos';
 
+
 header{
     @include navigation;
 }
@@ -23,6 +24,13 @@ p{
 }
 .Creacion-de-cuerpos-celestes{
     background-color: $color_black;
+    display: flex;
+    justify-content: center;
+}
+
+.Creacion-de-cuerpos-celestes-img{
+    display: flex;
+    justify-content: center;
 }
 
 .Planetas-y-estrellas{
@@ -38,7 +46,7 @@ p{
     
 }
 
-.Fenomenos img{
+#Fenomenos__img{
     background-color: $color_black;
     display: flex;
     justify-content: center;
@@ -49,30 +57,36 @@ p{
 .Agujeros-negros{
     
     background-color: $color_black;
+    margin-top: 5%;
 }
 h2{
     color: $color_white;
 }
 
+h3{
+    color: $color_white;
+}
+
 /*cambiar colores(CARDS)   y demas cosas */
 .cartas-principales {
-    background-color: green;
-    border:solid;
-    border-radius: 100px;
+    background-color:$color_black;
+    
+    margin-bottom: 20px;
     margin-top: 40px;
     border: 4px solid $color6;
     background-color: $color_black;
+    border-radius: 100px;
     transition-duration: 500ms;
     border-radius: 0px;
-    box-shadow: 15px 15px 25px 0px rgba(86, 41, 107, 0.219);
-    transition-duration: 500ms;
-    transform: rotateX(-40deg) rotateY(30deg);
+    box-shadow: 15px 15px 25px 0px rgba(114, 62, 138, 0.021);
+    transition-duration: 200ms;
+    transform: rotateX(-5deg) rotateY(30deg);
     img{
         width: 100%;
         height: 250px;
         border-radius: 0px;
-        filter: saturate(100%) grayscale(50%);
-        box-shadow: 5px 5px 25px 0px rgba(0,0,0,0);
+        filter: saturate(200%) grayscale(20%);
+        box-shadow: 5px 5px 25px 0px rgba(153, 140, 140, 0);
         object-fit: cover;
         transition-duration: 230ms;
         user-select: none;
@@ -90,10 +104,10 @@ h2{
         }
         h5{
             text-shadow: 5px 5px 10px rgba(0,0,0,0);
-            color: $color2;
+            color: $colors;
         }
         p{
-            text-shadow: 5px 5px 10px  rgba(0,0,0,0);
+            text-shadow: 5px 5px 10px  rgba(65, 57, 57, 0);
             color: $colorp;
         }
     }
@@ -118,4 +132,5 @@ h2{
 .Agujeros-negros{
     display: flex;
     justify-content: center;
+
 }

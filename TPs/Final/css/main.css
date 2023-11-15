@@ -49,6 +49,9 @@ body {
   0% {
     opacity: 0;
     transform: translateY(100px); }
+  65% {
+    opacity: 0.5;
+    transform: translateY(100px); }
   100% {
     opacity: 1;
     transform: translateY(0px); } }
@@ -167,12 +170,6 @@ header nav {
       flex-flow: column nowrap;
       justify-content: space-between;
       transition-duration: 500ms; }
-      .contenedor .contenedor__caja1 div:hover {
-        background-color: #7b2cbf;
-        border: 1.5px solid #ffffff96;
-        box-shadow: 0px 0px 50px #7b2cbf; }
-      .contenedor .contenedor__caja1 div:hover img {
-        box-shadow: 0px 0px 25px #240046; }
     .contenedor .contenedor__caja1 #contenedor__caja1_card1 {
       view-timeline-name: --image;
       view-timeline-axis: block;
@@ -180,6 +177,12 @@ header nav {
       animation-name: mostrarI;
       animation-range: entry 50% cover 35%;
       animation-fill-mode: both; }
+      .contenedor .contenedor__caja1 #contenedor__caja1_card1:hover {
+        background-color: #7b2cbf;
+        border: 1.5px solid #ffffff96;
+        box-shadow: 0px 0px 50px #7b2cbf; }
+      .contenedor .contenedor__caja1 #contenedor__caja1_card1:hover img {
+        box-shadow: 0px 0px 25px #240046; }
     .contenedor .contenedor__caja1 #contenedor__caja1_card2 {
       view-timeline-name: --image;
       view-timeline-axis: block;
@@ -187,11 +190,17 @@ header nav {
       animation-name: mostrarD;
       animation-range: entry 50% cover 35%;
       animation-fill-mode: both; }
+      .contenedor .contenedor__caja1 #contenedor__caja1_card2:hover {
+        background-color: #3a50c9;
+        border: 1.5px solid #ffffff96;
+        box-shadow: 0px 0px 50px #485fdf; }
+      .contenedor .contenedor__caja1 #contenedor__caja1_card2:hover img {
+        box-shadow: 0px 0px 25px #192981; }
   .contenedor .contenedor__caja2 {
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
-    animation-name: mostrarA;
+    animation-name: mostrarD;
     animation-range: entry 50% cover 35%;
     animation-fill-mode: both;
     height: 100vh;
@@ -221,8 +230,8 @@ header nav {
       view-timeline-name: --image;
       view-timeline-axis: block;
       animation-timeline: --image;
-      animation-name: mostrarA;
-      animation-range: entry 50% cover 35%;
+      animation-name: mostrar;
+      animation-range: entry 25% cover 35%;
       animation-fill-mode: both;
       position: relative;
       position: relative;
@@ -244,11 +253,15 @@ header nav {
       justify-content: stretch;
       transition-duration: 500ms; }
       .contenedor .contenedor__caja3 div:hover {
-        background-color: #2aa36b;
+        background-color: #d36f35;
         border: 1.5px solid #ffffff96;
-        box-shadow: 0px 0px 50px #41cf81; }
+        box-shadow: 0px 0px 50px #aaa; }
+      .contenedor .contenedor__caja3 div:hover h1 {
+        color: #202020; }
+      .contenedor .contenedor__caja3 div:hover p {
+        color: #202020; }
       .contenedor .contenedor__caja3 div:hover img {
-        box-shadow: 0px 0px 25px #41cf81; }
+        box-shadow: 0px 0px 25px #bbb; }
 
 footer {
   width: 100%;

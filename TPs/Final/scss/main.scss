@@ -42,6 +42,9 @@ header{
             flex-flow: column nowrap;
             justify-content: space-between;
             transition-duration: 500ms;
+        }
+        #contenedor__caja1_card1{
+            @include imagen-scroll-i;
             &:hover{
                 background-color:$colorp;
                 border: 1.5px solid #ffffff96;
@@ -55,16 +58,25 @@ header{
                 box-shadow: 0px 0px 25px $color7;
             }
         }
-        #contenedor__caja1_card1{
-            @include imagen-scroll-i;
-        }
         #contenedor__caja1_card2{
             @include imagen-scroll-d;
+            &:hover{
+                background-color:$colors;
+                border: 1.5px solid #ffffff96;
+                box-shadow: 0px 0px 50px #485fdf;
+            }
+            &:hover h1{
+            }
+            &:hover p{
+            }
+            &:hover img{
+                box-shadow: 0px 0px 25px #192981;
+            }
         }
         
     }
     .contenedor__caja2{
-        @include imagen-scroll-a;
+        @include imagen-scroll-d;
         height: 100vh;
         background-color: #fff;
 
@@ -96,7 +108,7 @@ header{
             margin-right: 30px;
         }
         div{
-            @include imagen-scroll-a;
+            @include imagen-scroll;
             position: relative;
             @include card;
             width: 85vw;
@@ -105,16 +117,18 @@ header{
             justify-content: stretch;
             transition-duration: 500ms;
             &:hover{
-                background-color:#2aa36b;
+                background-color:rgb(211, 111, 53);
                 border: 1.5px solid #ffffff96;
-                box-shadow: 0px 0px 50px #41cf81;
+                box-shadow: 0px 0px 50px #aaa;
             }
             &:hover h1{
+                color: #202020;
             }
             &:hover p{
+                color: #202020;
             }
             &:hover img{
-                box-shadow: 0px 0px 25px #41cf81;
+                box-shadow: 0px 0px 25px #bbb;
             }
         }
     }
