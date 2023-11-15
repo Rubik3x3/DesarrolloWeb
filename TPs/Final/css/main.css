@@ -170,6 +170,19 @@ header nav {
       flex-flow: column nowrap;
       justify-content: space-between;
       transition-duration: 500ms; }
+      .contenedor .contenedor__caja1 div img {
+        transition-duration: 500ms; }
+      .contenedor .contenedor__caja1 div h1 {
+        transition-duration: 500ms; }
+      .contenedor .contenedor__caja1 div p {
+        transition-duration: 500ms; }
+      .contenedor .contenedor__caja1 div:hover img {
+        border: 1.5px solid #ffffff96;
+        transform: scale(110%) translateY(60px); }
+      .contenedor .contenedor__caja1 div:hover p {
+        transform: scale(110%) translateY(25px); }
+      .contenedor .contenedor__caja1 div:hover h1 {
+        transform: scale(110%); }
     .contenedor .contenedor__caja1 #contenedor__caja1_card1 {
       view-timeline-name: --image;
       view-timeline-axis: block;
@@ -200,7 +213,7 @@ header nav {
     view-timeline-name: --image;
     view-timeline-axis: block;
     animation-timeline: --image;
-    animation-name: mostrarD;
+    animation-name: mostrarI;
     animation-range: entry 50% cover 35%;
     animation-fill-mode: both;
     height: 100vh;

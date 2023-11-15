@@ -155,7 +155,13 @@ header nav {
   border: 1.5px solid #ffffff17;
   user-select: none; }
   .cont-text h5 {
-    text-align: center; }
+    text-align: center;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-text img {
     border-radius: 20px;
     margin-top: 25px;
@@ -287,6 +293,75 @@ header nav {
     margin-right: 25px;
     width: 40%;
     height: 100%; }
+
+.cont-telescopio {
+  display: block;
+  color: #fff;
+  height: 100%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: mostrar;
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both; }
+  .cont-telescopio h1 {
+    padding-left: 5%;
+    padding-top: 1%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio p {
+    padding-left: 5%;
+    padding-right: 8%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio h3 {
+    padding-left: 5%;
+    padding-top: 1%;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio h5 {
+    padding-left: 5%;
+    padding-right: 8%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio #tex1 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio #text2 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
 
 footer {
   width: 100%;

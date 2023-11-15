@@ -115,6 +115,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .contenedor-principal img {
+    height: 100%;
+    width: 100%; }
 
 .contenedor-principal__planetas {
   font-size: 10px;
@@ -138,7 +141,7 @@ body {
 .mercurio, .venus, .tierra, .luna, .marte, .jupiter, .saturno, .urano, .neptuno, .aros {
   position: absolute;
   border-style: solid;
-  border-color: #454545;
+  border-color: #757575;
   border-width: 0.1em 0.1em 0.1em 0.1em;
   border-radius: 50%; }
   .mercurio img, .venus img, .tierra img, .luna img, .marte img, .jupiter img, .saturno img, .urano img, .neptuno img, .aros img {

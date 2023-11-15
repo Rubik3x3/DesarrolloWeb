@@ -123,6 +123,47 @@ header{
         height: 100%;
     }
 }
+.cont-telescopio{
+    display: block;
+    color: #fff;
+    height: 100%;
+        h1{
+            padding-left: 5%;
+            padding-top: 1%;
+            @include imagen-scroll;
+        }
+        p{
+            padding-left: 5%;
+            padding-right: 8%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        h3{
+            padding-left: 5%;
+            padding-top: 1%;
+            @include imagen-scroll;
+        }
+        h5{
+            padding-left: 5%;
+            padding-right: 8%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        #tex1{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        #text2{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+    @include imagen-scroll;
+}
+
 footer{
     @include footer;
 }

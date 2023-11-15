@@ -42,6 +42,26 @@ header{
             flex-flow: column nowrap;
             justify-content: space-between;
             transition-duration: 500ms;
+            img{
+                transition-duration: 500ms;
+            }
+            h1{
+                transition-duration: 500ms;
+            }
+            p{
+                transition-duration: 500ms;
+            }
+            &:hover img{
+                border: 1.5px solid #ffffff96;
+                transform: scale(110%) translateY(60px);
+            }
+            &:hover p{
+                transform: scale(110%) translateY(25px);
+            }
+            &:hover h1{
+                transform: scale(110%);
+            }
+
         }
         #contenedor__caja1_card1{
             @include imagen-scroll-i;
@@ -76,7 +96,7 @@ header{
         
     }
     .contenedor__caja2{
-        @include imagen-scroll-d;
+        @include imagen-scroll-i;
         height: 100vh;
         background-color: #fff;
 
