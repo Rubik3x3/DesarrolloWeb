@@ -1,7 +1,9 @@
 @import 'colors';
 @import 'elementos';
 
-
+*{
+    background-color: $color_black
+}
 
 
 header{
@@ -70,10 +72,12 @@ h3{
 }
 
 /*cambiar colores(CARDS)   y demas cosas */
+
+
 .cartas-principales {
     border: 4px solid $color6;
     background-color:$color_black;
-    @include imagen-scroll-a;
+    
     margin-bottom: 20px;
     margin-top: 40px;
     
@@ -98,7 +102,7 @@ h3{
 
     &:hover{
         background-color: $color_black;
-        border: 4px solid $color3;
+        border: 3px solid $color3;
         
         transform: rotateX(0deg) rotateY(0deg);
         box-shadow: 15px 15px 25px 0px rgba(0,0,0,0);

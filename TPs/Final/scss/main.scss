@@ -24,6 +24,7 @@ header{
         height: 100vh;
         img{
             border-radius: 20px;
+            filter: saturate(500%);
         }
         h1{
             color: $color_white;
@@ -44,6 +45,7 @@ header{
             transition-duration: 500ms;
             img{
                 transition-duration: 500ms;
+                filter: grayscale(100%);
             }
             h1{
                 transition-duration: 500ms;
@@ -52,6 +54,7 @@ header{
                 transition-duration: 500ms;
             }
             &:hover img{
+                filter: grayscale(0%) saturate(500%);
                 border: 1.5px solid #ffffff96;
                 transform: scale(110%) translateY(60px);
             }
@@ -99,11 +102,10 @@ header{
         @include imagen-scroll-i;
         height: 100vh;
         background-color: #fff;
-
+        
         img{
             width: 100%;
             height: 100%;
-            
         }
     }
 
@@ -136,6 +138,7 @@ header{
             flex-flow: column nowrap;
             justify-content: stretch;
             transition-duration: 500ms;
+            
             &:hover{
                 background-color:rgb(211, 111, 53);
                 border: 1.5px solid #ffffff96;

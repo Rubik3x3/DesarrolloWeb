@@ -142,7 +142,8 @@ header nav {
     animation-name: mostrar;
     height: 100vh; }
     .contenedor .contenedor__caja1 img {
-      border-radius: 20px; }
+      border-radius: 20px;
+      filter: saturate(500%); }
     .contenedor .contenedor__caja1 h1 {
       color: #ffffff;
       font-size: 48px; }
@@ -171,12 +172,14 @@ header nav {
       justify-content: space-between;
       transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div img {
-        transition-duration: 500ms; }
+        transition-duration: 500ms;
+        filter: grayscale(100%); }
       .contenedor .contenedor__caja1 div h1 {
         transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div p {
         transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div:hover img {
+        filter: grayscale(0%) saturate(500%);
         border: 1.5px solid #ffffff96;
         transform: scale(110%) translateY(60px); }
       .contenedor .contenedor__caja1 div:hover p {
