@@ -1,9 +1,7 @@
 @import 'colors';
 @import 'elementos';
 
-*{
-    background-color: $color_black
-}
+
 
 
 header{
@@ -134,12 +132,12 @@ h3{
 
 #carrusel-agujeros{
     display: flex;
-    width: 80vw;
+    width: 60vw;
     height: 70vh;
 
 }
 .Agujeros-negros{
     display: flex;
     justify-content: center;
-
 }
+

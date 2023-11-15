@@ -342,6 +342,16 @@ header nav {
     animation-name: mostrar;
     animation-range: entry 25% cover 35%;
     animation-fill-mode: both; }
+  .cont-telescopio h4 {
+    padding-left: 5%;
+    padding-right: 8%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
   .cont-telescopio #tex1 {
     padding-left: 3%;
     padding-right: 9%;

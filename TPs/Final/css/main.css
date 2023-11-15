@@ -173,13 +173,15 @@ header nav {
       transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div img {
         transition-duration: 500ms;
-        filter: grayscale(100%); }
+        filter: grayscale(100%);
+        width: 100%;
+        height: 100%; }
       .contenedor .contenedor__caja1 div h1 {
         transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div p {
         transition-duration: 500ms; }
       .contenedor .contenedor__caja1 div:hover img {
-        filter: grayscale(0%) saturate(500%);
+        filter: grayscale(0%) saturate(110%);
         border: 1.5px solid #ffffff96;
         transform: scale(110%) translateY(60px); }
       .contenedor .contenedor__caja1 div:hover p {
@@ -220,10 +222,12 @@ header nav {
     animation-range: entry 50% cover 35%;
     animation-fill-mode: both;
     height: 100vh;
-    background-color: #fff; }
+    background-color: #ffffff00; }
     .contenedor .contenedor__caja2 img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      opacity: 0.25;
+      object-fit: cover; }
   .contenedor .contenedor__caja3 {
     background-color: #101010;
     display: flex;
@@ -264,20 +268,26 @@ header nav {
       border: 1.5px solid #ffffff17;
       user-select: none;
       width: 85vw;
+      height: 60vh;
       display: flex;
       flex-flow: column nowrap;
       justify-content: stretch;
       transition-duration: 500ms; }
+      .contenedor .contenedor__caja3 div p {
+        font-size: 18px;
+        transition-duration: 300ms; }
+      .contenedor .contenedor__caja3 div h1 {
+        transition-duration: 300ms; }
       .contenedor .contenedor__caja3 div:hover {
-        background-color: #d36f35;
+        background-color: #3a50c9;
         border: 1.5px solid #ffffff96;
-        box-shadow: 0px 0px 50px #aaa; }
+        box-shadow: 0px 0px 50px #485fdf; }
       .contenedor .contenedor__caja3 div:hover h1 {
-        color: #202020; }
+        transform: scale(105%); }
       .contenedor .contenedor__caja3 div:hover p {
-        color: #202020; }
+        transform: scale(105%); }
       .contenedor .contenedor__caja3 div:hover img {
-        box-shadow: 0px 0px 25px #bbb; }
+        box-shadow: 0px 0px 25px #192981; }
 
 footer {
   width: 100%;
