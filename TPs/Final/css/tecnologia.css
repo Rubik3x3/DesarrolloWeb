@@ -372,6 +372,50 @@ header nav {
     animation-name: mostrar;
     animation-range: entry 25% cover 35%;
     animation-fill-mode: both; }
+  .cont-telescopio #text3 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio #text4 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio #text5 {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+  .cont-telescopio #espaciales {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: start;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 35%;
+    animation-fill-mode: both; }
+    .cont-telescopio #espaciales p {
+      padding-left: 6%;
+      padding-right: 9%;
+      text-align: start; }
 
 footer {
   width: 100%;

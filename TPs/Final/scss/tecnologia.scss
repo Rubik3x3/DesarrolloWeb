@@ -167,6 +167,35 @@ header{
             text-align: start;
             @include imagen-scroll;
         }
+        #text3{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        #text4{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        #text5{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            @include imagen-scroll;
+        }
+        #espaciales{
+            padding-left: 3%;
+            padding-right: 9%;
+            text-align: start;
+            p{
+                padding-left: 6%;
+                padding-right: 9%;
+                text-align: start;
+            }
+            @include imagen-scroll;
+        }
     @include imagen-scroll;
 }
 

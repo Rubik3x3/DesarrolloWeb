@@ -154,7 +154,8 @@ p {
   background-color: #101010; }
 
 .Fenomenos {
-  background-color: #101010; }
+  background-color: #101010;
+  margin-bottom: 40px; }
 
 #Fenomenos__img {
   background-color: #101010;
@@ -218,9 +219,11 @@ h3 {
 
 #carrusel-agujeros {
   display: flex;
-  width: 60vw;
-  height: 70vh; }
+  width: 50vw;
+  height: 60vh; }
+  #carrusel-agujeros img {
+    width: 100%;
+    height: 100%; }
 
 .Agujeros-negros {
-  display: flex;
-  justify-content: center; }
+  margin-top: 30px; }

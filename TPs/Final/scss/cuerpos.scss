@@ -45,6 +45,7 @@ p{
 }
 .Fenomenos{
     background-color: $color_black;
+    margin-bottom: 40px;
     
 }
 
@@ -132,12 +133,16 @@ h3{
 
 #carrusel-agujeros{
     display: flex;
-    width: 60vw;
-    height: 70vh;
+    width: 50vw;
+    height: 60vh;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 
 }
 .Agujeros-negros{
-    display: flex;
-    justify-content: center;
+    
+    margin-top: 30px;
 }
 
