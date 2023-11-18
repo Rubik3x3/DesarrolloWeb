@@ -107,19 +107,43 @@ header nav {
           text-shadow: 0px 0px 5px #c77dff; }
 
 body {
-  background-color: #454545; }
+  background-color: #454545;
+  overflow-x: hidden; }
 
 .contenedor-principal {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* TITULO PRINCIPAL */ }
+  .contenedor-principal img {
+    user-select: none;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: saturate(150%); }
+  .contenedor-principal h1 {
+    user-select: none;
+    z-index: 1;
+    opacity: 1;
+    font-size: 162px;
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Jura', sans-serif;
+    text-shadow: 0px 0px 50px #ffffff;
+    animation: titulo-principal 3s linear infinite; }
+
+.contenedor-sistema {
   margin: 0;
-  height: 170vh;
+  height: 155vh;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .contenedor-principal img {
+  .contenedor-sistema img {
     height: 100%;
     width: 100%; }
 
-.contenedor-principal__planetas {
+.contenedor-sistema__planetas {
   font-size: 10px;
   width: 40em;
   height: 40em;
@@ -155,7 +179,8 @@ body {
   left: 10.5em;
   width: 15em;
   height: 15em;
-  animation: orbita 30s linear infinite; }
+  animation: orbita 30s linear infinite;
+  resize: both; }
   .mercurio img {
     top: 2.6em;
     right: 2.6em;
@@ -168,7 +193,8 @@ body {
   left: 5.5em;
   width: 25em;
   height: 25em;
-  animation: orbita 60s linear infinite; }
+  animation: orbita 60s linear infinite;
+  resize: both; }
   .venus img {
     top: 3.8em;
     right: 3.8em;
@@ -181,7 +207,8 @@ body {
   left: -2em;
   width: 40em;
   height: 40em;
-  animation: orbita 90s linear infinite; }
+  animation: orbita 90s linear infinite;
+  resize: both; }
   .tierra img {
     top: 5.7em;
     right: 5.7em;
@@ -208,7 +235,8 @@ body {
   left: -8em;
   width: 52.5em;
   height: 52.5em;
-  animation: orbita 120s linear infinite; }
+  animation: orbita 120s linear infinite;
+  resize: both; }
   .marte img {
     top: 7.8em;
     right: 7.8em;
@@ -221,7 +249,8 @@ body {
   left: -14em;
   width: 65em;
   height: 65em;
-  animation: orbita 150s linear infinite; }
+  animation: orbita 150s linear infinite;
+  resize: both; }
   .jupiter img {
     top: 8.5em;
     right: 8.5em;
@@ -234,7 +263,8 @@ body {
   left: -22em;
   width: 80em;
   height: 80em;
-  animation: orbita 180s linear infinite; }
+  animation: orbita 180s linear infinite;
+  resize: both; }
   .saturno img {
     top: 11em;
     right: 11em;
@@ -254,7 +284,8 @@ body {
   left: -28em;
   width: 92em;
   height: 92em;
-  animation: orbita 210s linear infinite; }
+  animation: orbita 210s linear infinite;
+  resize: both; }
   .urano img {
     top: 14em;
     right: 14em;
@@ -274,7 +305,8 @@ body {
   left: -36.5em;
   width: 110em;
   height: 110em;
-  animation: orbita 250s linear infinite; }
+  animation: orbita 250s linear infinite;
+  resize: both; }
   .neptuno img {
     top: 14em;
     right: 14em;

@@ -8,11 +8,16 @@ header{
 
 body{
     background-color: #454545;
+    overflow-x: hidden;
 }
 
 .contenedor-principal{
+    @include contenedor-principal
+}
+
+.contenedor-sistema{
     margin: 0;
-    height: 170vh;
+    height: 155vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +27,7 @@ body{
     }
 }
 
-.contenedor-principal__planetas{
+.contenedor-sistema__planetas{
     font-size: 10px;
     width: 40em;
     height: 40em;
@@ -65,6 +70,7 @@ body{
     width: 15em;
     height: 15em;
     animation: orbita 30s linear infinite;
+    resize: both;
     img{
         top: 2.6em;
         right: 2.6em;
@@ -80,6 +86,7 @@ body{
     width: 25em;
     height: 25em;
     animation: orbita 60s linear infinite;
+    resize: both;
     img{
         top: 3.8em;
         right: 3.8em;
@@ -95,6 +102,7 @@ body{
     width: 40em;
     height: 40em;
     animation: orbita 90s linear infinite; 
+    resize: both;
     img{
         top: 5.7em;
         right: 5.7em;
@@ -116,7 +124,7 @@ body{
         width: 1.2em;
         height: 1.2em;
         background-color: silver;
-        animation: orbita 15s linear infinite; 
+        animation: orbita 15s linear infinite;
     }
 }
 
@@ -126,6 +134,7 @@ body{
     width: 52.5em;
     height: 52.5em;
     animation: orbita 120s linear infinite;
+    resize: both;
     img{
         top: 7.8em;
         right: 7.8em;
@@ -141,6 +150,7 @@ body{
     width: 65em;
     height: 65em;
     animation: orbita 150s linear infinite;
+    resize: both;
     img{
         top: 8.5em;
         right: 8.5em;
@@ -156,6 +166,7 @@ body{
     width: 80em;
     height: 80em;
     animation: orbita 180s linear infinite;
+    resize: both;
     img{
         top: 11em;
         right: 11em;
@@ -179,6 +190,7 @@ body{
     width: 92em;
     height: 92em;
     animation: orbita 210s linear infinite;
+    resize: both;
     img{
         top: 14em;
         right: 14em;
@@ -202,12 +214,13 @@ body{
     width: 110em;
     height: 110em;
     animation: orbita 250s linear infinite;
+    resize: both;
     img{
         top: 14em;
         right: 14em;
         width: 4em;
         height: 4em;
-        animation: orbita 15s linear infinite; 
+        animation: orbita 15s linear infinite;
     }
 }
 
