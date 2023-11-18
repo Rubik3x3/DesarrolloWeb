@@ -134,8 +134,7 @@ body {
     animation: titulo-principal 3s linear infinite; }
 
 .contenedor-sistema {
-  margin: 0;
-  height: 155vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -147,7 +146,7 @@ body {
   font-size: 10px;
   width: 40em;
   height: 40em;
-  position: absolute; }
+  position: relative; }
 
 .sol {
   position: absolute;
