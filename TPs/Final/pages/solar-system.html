@@ -86,29 +86,32 @@
     </div>
 
     <div class="container mt-5 contenedor-botones-info">
-        <button class="btn btn-primary boton1" type="button" data-bs-toggle="collapse" data-bs-target="#contenido1" aria-expanded="false" aria-controls="contenido1">Mostrar Texto 1</button>
-        <button class="btn btn-primary boton2" type="button" data-bs-toggle="collapse" data-bs-target="#contenido2" aria-expanded="false" aria-controls="contenido2">Mostrar Texto 2</button>
-        <button class="btn btn-primary boton3" type="button" data-bs-toggle="collapse" data-bs-target="#contenido3" aria-expanded="false" aria-controls="contenido3">Mostrar Texto 3</button>
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary boton1" data-bs-toggle="collapse" href="#contenido1" role="button" aria-expanded="false" aria-controls="contenido1">Mostrar Texto 1</a>
+            <a class="btn btn-primary boton2" data-bs-toggle="collapse" href="#contenido2" role="button" aria-expanded="false" aria-controls="contenido2">Mostrar Texto 2</a>
+            <a class="btn btn-primary boton3" data-bs-toggle="collapse" href="#contenido3" role="button" aria-expanded="false" aria-controls="contenido3">Mostrar Texto 3</a>
+        </p>
       
         <!-- Contenido colapsable -->
-        <div class="collapse collapse-horizontal" id="contenido1">
+        <div class="collapse" id="contenido1">
             <div class="card card-body">
                 <p>Este es el contenido del Texto 1.</p>
             </div>
         </div>
       
-        <div class="collapse collapse-horizontal" id="contenido2">
+        <div class="collapse" id="contenido2">
             <div class="card card-body">
                 <p>Este es el contenido del Texto 2.</p>
             </div>
         </div>
       
-        <div class="collapse collapse-horizontal" id="contenido3">
+        <div class="collapse" id="contenido3">
             <div class="card card-body">
                 <p>Este es el contenido del Texto 3.</p>
             </div>
         </div>
     </div>
+      
     
 </body>
 </html>

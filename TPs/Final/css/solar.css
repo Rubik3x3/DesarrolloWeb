@@ -320,17 +320,3 @@ body {
     transform: rotate(360deg); } }
 
 /*Botones planetas*/
-.boton1:hover + #contenido1 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out; }
-
-.boton2:hover + #contenido2 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out; }
-
-.boton3:hover + #contenido3 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out; }
