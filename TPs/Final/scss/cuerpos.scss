@@ -33,6 +33,8 @@ p{
 .Creacion-de-cuerpos-celestes-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 5px
+    ;
 }
 
 .Planetas-y-estrellas{
@@ -60,10 +62,14 @@ p{
 
 h2{
     color: $color_white;
+    display: flex;
+    justify-content: center;
 }
 
 h3{
     color: $color_white;
+    display: flex;
+    justify-content: center;
 }
 
 /*cambiar colores(CARDS)   y demas cosas */
@@ -146,4 +152,8 @@ h3{
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 0.05px;
+}
+
+.all{
+    background-color: $color_black;
 }
