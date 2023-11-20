@@ -46,6 +46,7 @@
     </div>
 
     <div class="contenedor-sistema">
+        <img src="../assets/images/solar/background.jpg" alt="">
 
         <div class="contenedor-sistema__planetas">
             <div class="neptuno">
@@ -84,36 +85,29 @@
 
     </div>
 
-    <div class="informacion-planetas">
-        <ul>
-            <li>
-                <h3>Mercurio</h3>
-            </li>
-            <li>
-                <h3>Venus</h3>
-            </li>
-            <li>
-                <h3>Tierra</h3>
-            </li>
-            <li>
-                <h3>Luna</h3>
-            </li>
-            <li>
-                <h3>Marte</h3>
-            </li>
-            <li>
-                <h3>Jupiter</h3>
-            </li>
-            <li>
-                <h3>Saturno</h3>
-            </li>
-            <li>
-                <h3>Urano</h3>
-            </li>
-            <li>
-                <h3>Neptuno</h3>
-            </li>
-        </ul>
+    <div class="container mt-5 contenedor-botones-info">
+        <button class="btn btn-primary boton1" type="button" data-bs-toggle="collapse" data-bs-target="#contenido1" aria-expanded="false" aria-controls="contenido1">Mostrar Texto 1</button>
+        <button class="btn btn-primary boton2" type="button" data-bs-toggle="collapse" data-bs-target="#contenido2" aria-expanded="false" aria-controls="contenido2">Mostrar Texto 2</button>
+        <button class="btn btn-primary boton3" type="button" data-bs-toggle="collapse" data-bs-target="#contenido3" aria-expanded="false" aria-controls="contenido3">Mostrar Texto 3</button>
+      
+        <!-- Contenido colapsable -->
+        <div class="collapse collapse-horizontal" id="contenido1">
+            <div class="card card-body" style="width: 300px;">
+                <p>Este es el contenido del Texto 1.</p>
+            </div>
+        </div>
+      
+        <div class="collapse collapse-horizontal" id="contenido2">
+            <div class="card card-body" style="width: 300px;">
+                <p>Este es el contenido del Texto 2.</p>
+            </div>
+        </div>
+      
+        <div class="collapse collapse-horizontal" id="contenido3">
+            <div class="card card-body" style="width: 300px;">
+                <p>Este es el contenido del Texto 3.</p>
+            </div>
+        </div>
     </div>
     
 </body>

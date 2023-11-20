@@ -18,20 +18,20 @@ body{
 
 .contenedor-sistema{
     grid-area: sistema;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     img{
         height: 100%;
-        width: 100%;
+        width: 130%
     }
 }
 
 .contenedor-sistema__planetas{
     font-size: 9px;
     width: 37.5em;
-    height: 12.5em;
+    height: 50em;
     position: absolute;
 }
 

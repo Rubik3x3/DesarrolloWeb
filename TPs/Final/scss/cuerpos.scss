@@ -45,7 +45,7 @@ p{
 }
 .Fenomenos{
     background-color: $color_black;
-    margin-bottom: 40px;
+    margin-bottom: 3px;
     
 }
 
@@ -57,11 +57,7 @@ p{
 }
 
 
-.Agujeros-negros{
-    
-    background-color: $color_black;
-    margin-top: 5%;
-}
+
 h2{
     color: $color_white;
 }
@@ -78,7 +74,7 @@ h3{
     background-color:$color_black;
     
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     
     background-color: $color_black;
     border-radius: 100px;
@@ -141,8 +137,13 @@ h3{
     }
 
 }
+
 .Agujeros-negros{
     
-    margin-top: 30px;
+    background-color: $color_black;
+    margin-top: 5px;
+    background-image: url(https://imgs.search.brave.com/Bj6gVLRk0n-wUw4gUcMdAOcP-xtRrG56F3VqAGKAjBI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bmF0aW9uYWxnZW9n/cmFwaGljLmNvbS5l/cy9tZWRpby8yMDIz/LzAzLzMwL2FndWpl/cm8tbmVncm9fMmQy/MjM3ZjNfMjMwMzMw/MTI1NDQzXzEyODB4/NzE4LmpwZw);  
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0.05px;
 }
-
