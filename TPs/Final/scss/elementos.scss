@@ -34,6 +34,77 @@ body{
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-evenly;
+
+            .menu{
+                display: none;
+            }
+
+            li{
+                list-style: none;
+                padding: 20px;
+                a {
+                    border-radius: 1px;
+                    font-size: 24px;
+                    color: $color_white;
+                    padding: 10px;
+                    position: relative;
+                    text-decoration: none;
+                    transition-duration: 300ms;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 4px;
+                        background-color: $color3;
+                        bottom: 0;
+                        left: 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform .3s ease-in-out;
+                    }
+                    &:hover::before {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }
+                    &:hover{
+                        color: $color2;
+                        text-shadow: 0px 0px 5px $color2;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        nav{
+            width: 768px;
+            ul{
+
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+
+                .opciones{
+                    display: none;
+                }
+                .menu{
+                    display: block;
+                }
+            }
+        }
+    }    
+}
+
+@mixin menu-canva{
+    .offcanvas-header{
+        background-color: #101010a6;
+        }
+    .offcanvas-body{
+        background-color: #101010a6;
+        ul{                    
             li{
                 list-style: none;
                 padding: 20px;
@@ -73,6 +144,7 @@ body{
         }
     }
 }
+
 @mixin card{
     position: relative;
     width: 40vw;
@@ -162,6 +234,43 @@ body{
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .contenedor-footer{
+            height: 150vh;
+            img{
+                width: 590px;
+                height: 186px;
+                align-self: center;
+                justify-self: center;
+            }
+    
+            #contenedor-footer__caja1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                
+                div{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 5vh 25% 5vh 25%;
+                    .boton{
+                        display: flex;
+                        justify-content: center;
+                        align-items: stretch;
+                        flex-direction: column;
+                    }
+                }
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @mixin contenedor-principal{
@@ -187,6 +296,13 @@ body{
         font-family: 'Jura', sans-serif;
         text-shadow: 0px 0px 50px $color_white;
         animation: titulo-principal 3s linear infinite;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1{
+            text-align: center;
+            font-size: 120px;
+        }        
     }
 }
 

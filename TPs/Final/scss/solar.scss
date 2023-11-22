@@ -6,25 +6,35 @@ header{
     @include navigation;
 }
 
+.menu_canva{
+    @include menu-canva;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #454545;
     overflow-x: hidden;
+    background: #111;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .contenedor-principal{
     @include contenedor-principal;
-    grid-area: principal;
 }
 
 .contenedor-sistema{
-    grid-area: sistema;
     height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     img{
         height: 100%;
-        width: 130%
+        width: 130%;
+        overflow: hidden;
     }
 }
 
@@ -42,8 +52,8 @@ body{
         width: 100%;
     }
     position: absolute;
-    top: 20em;
-    left: 15em;
+    top: 19.5em;
+    left: 14.5em;
     width: 7em;
     height: 7em;
     border-radius: 50%;
@@ -73,8 +83,8 @@ body{
     animation: orbita 30s linear infinite;
     resize: both;
     img{
-        top: 2.6em;
-        right: 2.6em;
+        top: 1em;
+        right: 1em;
         width: 2em;
         height: 2em;
         animation: orbita 15s linear infinite; 
@@ -89,8 +99,8 @@ body{
     animation: orbita 60s linear infinite;
     resize: both;
     img{
-        top: 3.8em;
-        right: 3.8em;
+        top: 2.5em;
+        right: 2.5em;
         width: 2.4em;
         height: 2.4em;
         animation: orbita 15s linear infinite; 
@@ -105,8 +115,8 @@ body{
     animation: orbita 90s linear infinite; 
     resize: both;
     img{
-        top: 5.7em;
-        right: 5.7em;
+        top: 4em;
+        right: 4em;
         width: 3em;
         height: 3em;
         animation: orbita 15s linear infinite; 
@@ -114,8 +124,8 @@ body{
 }
 
 .luna {
-    top: 3.7em;
-    right: 3.7em;
+    top: 2em;
+    right: 2em;
     width: 7em;
     height: 7em;
     animation: orbita 20s linear infinite; 
@@ -137,8 +147,8 @@ body{
     animation: orbita 120s linear infinite;
     resize: both;
     img{
-        top: 7.8em;
-        right: 7.8em;
+        top: 6em;
+        right: 6em;
         width: 2.5em;
         height: 2.5em;
         animation: orbita 15s linear infinite; 
@@ -153,8 +163,8 @@ body{
     animation: orbita 150s linear infinite;
     resize: both;
     img{
-        top: 8.5em;
-        right: 8.5em;
+        top: 6.5em;
+        right: 6.5em;
         width: 5em;
         height: 5em;
         animation: orbita 15s linear infinite; 
@@ -169,8 +179,8 @@ body{
     animation: orbita 180s linear infinite;
     resize: both;
     img{
-        top: 11em;
-        right: 11em;
+        top: 10em;
+        right: 10em;
         width: 4em;
         height: 4em;
         animation: orbita 15s linear infinite; 
@@ -180,7 +190,7 @@ body{
         right: 9em;
         width: 6em;
         height: 6em;
-        border-width: 1em 1em 1em 1em;
+        border-width: 0.5em 0.5em 0.5em 0.5em;
         border-color: silver;
     }
 }
@@ -193,19 +203,11 @@ body{
     animation: orbita 210s linear infinite;
     resize: both;
     img{
-        top: 14em;
-        right: 14em;
+        top: 11.5em;
+        right: 11.5em;
         width: 4em;
         height: 4em;
         animation: orbita 15s linear infinite; 
-    }
-    div{
-        top: 12.7em;
-        right: 12.7em;
-        width: 5em;
-        height: 5em;
-        border-width: 0.8em 0.8em 0.8em 0.8em;
-        border-color: silver;
     }
 }
 
@@ -232,8 +234,77 @@ body{
     }
 }
 
-/*Botones planetas*/
+/*Info planetas*/
 
+.carousel-item {
+    position: relative;
+    background-color: #353535;
+}
+  
+.derecha, .izquierda {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 40%;
+    transform: translateY(-50%);
+    h2{
+        color: #fff;
+        font-size: 10vh;
+    }
+    p{
+        color: #fff;
+        font-size: 4vh;
+    }
+}
 
+.contenedor-texto {
+  position: absolute;
+}
   
+.derecha {
+    right: 15%;
+}
   
+.izquierda {
+    left: 15%;
+}
+
+footer{
+    @include footer;
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .contenedor-sistema__planetas{
+        font-size: 5px;
+    }
+
+    .contenedor-sistema{
+        height: 110vh;
+    }
+
+    .carousel-item {
+        width: 768px;
+    }
+      
+    .derecha, .izquierda {
+        top: 15%;
+        h2{
+            font-size: 9vh;
+        }
+        p{
+            font-size: 3vh;
+        }
+    }
+
+    #luna-txt{
+        p{
+            font-size: 2.5vh;
+        }
+    }
+
+}
