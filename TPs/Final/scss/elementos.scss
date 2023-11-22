@@ -185,6 +185,16 @@ body{
             justify-self: center;
         }
 
+        @media screen and (max-width: 768px) {
+            .contenedor-footer{
+                height: 150vh;
+                img{
+                    width: 680px;
+                    height: 50%;
+        
+                }
+            }
+        }
         #contenedor-footer__caja1{
             grid-area: caja1;
 
@@ -236,16 +246,6 @@ body{
     }
 }
 
-@media screen and (max-width: 768px) {
-    .contenedor-footer{
-        height: 150vh;
-        img{
-            width: 680px;
-            height: 50%;
-
-        }
-    }
-}
 
 @mixin contenedor-principal{
     display: flex;

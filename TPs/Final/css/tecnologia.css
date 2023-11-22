@@ -15,13 +15,6 @@ body {
   width: 75px;
   height: 75px; }
 
-@media screen and (max-width: 768px) {
-  .contenedor-footer {
-    height: 150vh; }
-    .contenedor-footer img {
-      width: 680px;
-      height: 50%; } }
-
 @keyframes titulo-principal {
   0% {
     text-shadow: 0px 0px 50px #ffffff; }
@@ -459,6 +452,12 @@ footer {
       height: 280px;
       align-self: center;
       justify-self: center; }
+    @media screen and (max-width: 768px) {
+      footer .contenedor-footer .contenedor-footer {
+        height: 150vh; }
+        footer .contenedor-footer .contenedor-footer img {
+          width: 680px;
+          height: 50%; } }
     footer .contenedor-footer #contenedor-footer__caja1 {
       grid-area: caja1;
       display: flex;
