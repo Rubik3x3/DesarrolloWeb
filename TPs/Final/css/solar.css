@@ -19,13 +19,8 @@ body {
   .contenedor-footer {
     height: 150vh; }
     .contenedor-footer img {
-      width: 50%;
-      height: 25%;
-      align-self: center;
-      justify-self: center; }
-    .contenedor-footer #contenedor-footer__caja1 {
-      display: flexbox;
-      flex-direction: column; } }
+      width: 680px;
+      height: 50%; } }
 
 @keyframes titulo-principal {
   0% {

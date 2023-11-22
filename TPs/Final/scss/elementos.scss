@@ -240,15 +240,9 @@ body{
     .contenedor-footer{
         height: 150vh;
         img{
-            width: 50%;
-            height: 25%;
-            align-self: center;
-            justify-self: center;
-        }
+            width: 680px;
+            height: 50%;
 
-        #contenedor-footer__caja1{
-            display: flexbox;
-            flex-direction: column;
         }
     }
 }
