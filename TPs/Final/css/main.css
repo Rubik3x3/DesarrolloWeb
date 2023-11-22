@@ -15,6 +15,18 @@ body {
   width: 75px;
   height: 75px; }
 
+@media screen and (max-width: 768px) {
+  .contenedor-footer {
+    height: 150vh; }
+    .contenedor-footer img {
+      width: 50%;
+      height: 25%;
+      align-self: center;
+      justify-self: center; }
+    .contenedor-footer #contenedor-footer__caja1 {
+      display: flexbox;
+      flex-direction: column; } }
+
 @keyframes titulo-principal {
   0% {
     text-shadow: 0px 0px 50px #ffffff; }
@@ -109,10 +121,51 @@ header nav {
           text-shadow: 0px 0px 5px #c77dff; }
 
 @media screen and (max-width: 768px) {
-  header nav ul .menu {
-    display: block; }
-  header nav ul .opciones {
-    display: none; } }
+  header nav {
+    width: 768px; }
+    header nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly; }
+      header nav ul .opciones {
+        display: none; }
+      header nav ul .menu {
+        display: block; } }
+
+.menu_canva .offcanvas-header {
+  background-color: #101010a6; }
+
+.menu_canva .offcanvas-body {
+  background-color: #101010a6; }
+  .menu_canva .offcanvas-body ul li {
+    list-style: none;
+    padding: 20px; }
+    .menu_canva .offcanvas-body ul li a {
+      border-radius: 1px;
+      font-size: 24px;
+      color: #ffffff;
+      padding: 10px;
+      position: relative;
+      text-decoration: none;
+      transition-duration: 300ms; }
+      .menu_canva .offcanvas-body ul li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #9d4edd;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out; }
+      .menu_canva .offcanvas-body ul li a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1); }
+      .menu_canva .offcanvas-body ul li a:hover {
+        color: #c77dff;
+        text-shadow: 0px 0px 5px #c77dff; }
 
 .contenedor-principal {
   display: flex;
@@ -136,6 +189,10 @@ header nav {
     font-family: 'Jura', sans-serif;
     text-shadow: 0px 0px 50px #ffffff;
     animation: titulo-principal 3s linear infinite; }
+  @media screen and (max-width: 768px) {
+    .contenedor-principal h1 {
+      text-align: center;
+      font-size: 120px; } }
 
 .contenedor {
   height: 100%;
@@ -442,3 +499,30 @@ footer {
         margin-top: 15px;
         color: #aaa;
         font-size: 18px; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    margin-top: 50%; }
+    .contenedor .contenedor__caja1 {
+      flex-flow: column nowrap; }
+      .contenedor .contenedor__caja1 div {
+        margin-top: 25px;
+        width: 95vw;
+        height: 100%; }
+    .contenedor .contenedor__caja2 {
+      flex-flow: column nowrap; }
+      .contenedor .contenedor__caja2 div {
+        width: 95vw; }
+      .contenedor .contenedor__caja2 p {
+        font-size: 9px; }
+      .contenedor .contenedor__caja2 ul {
+        width: 100%; }
+        .contenedor .contenedor__caja2 ul li {
+          width: 100%; }
+    .contenedor .contenedor__caja3 div h1 {
+      text-align: center;
+      font: 18px; }
+    .contenedor .contenedor__caja3 div p {
+      font-size: 12px; }
+  .contenedor-principal h1 {
+    font-size: 64px; } }
