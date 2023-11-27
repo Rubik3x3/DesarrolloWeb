@@ -209,6 +209,27 @@ footer{
 
 @media screen and (max-width: 768px){
 
-    
+    #carouselExampleIndicators{
+        img{
+            width: 100vw;
+            height: 75vh;
+        }
+    }
+}
 
+@media screen and (max-width: 320px){
+
+    #carouselExampleIndicators{
+        img{
+            height: 45vh;
+        }
+    }
+    .cont-text{
+        height: 190vh;
+        div{
+            img{
+                width: 200px;
+            }
+        }
+    }
 }

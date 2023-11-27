@@ -1,159 +1,47 @@
-@import 'colors';
 @import 'elementos';
-
-
+@import 'colors';
 
 
 header{
     @include navigation;
 }
 
+body{
+    background-color: #050505;
+}
+
+.menu_canva{
+    @include menu-canva;
+}
+
+
 .contenedor-principal{
     @include contenedor-principal;
 }
 
-.contenedor-principal{
-    background-color: $color_black;
-}
-
-.denominacion{
-    background-color: $color_black;
-   
-}
-
-p{
-    color: $color_white;
-}
-.Creacion-de-cuerpos-celestes{
-    background-color: $color_black;
-    display: flex;
-    justify-content: center;
-}
-
-.Creacion-de-cuerpos-celestes-img{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px
-    ;
-}
-
-.Planetas-y-estrellas{
-    background-color: $color_black;
-
-}
-
-.ciclos{
-    background-color: $color_black;
-}
-.Fenomenos{
-    background-color: $color_black;
-    margin-bottom: 3px;
-    
-}
-
-#Fenomenos__img{
-    background-color: $color_black;
-    display: flex;
-    justify-content: center;
-    
-}
-
-
-
-h2{
-    color: $color_white;
-    display: flex;
-    justify-content: center;
-}
-
-h3{
-    color: $color_white;
-    display: flex;
-    justify-content: center;
-}
-
-/*cambiar colores(CARDS)   y demas cosas */
-
-
-.cartas-principales {
-    border: 4px solid $color6;
-    background-color:$color_black;
-    
-    margin-bottom: 20px;
-    margin-top: 10px;
-    
-    background-color: $color_black;
-    border-radius: 100px;
-    transition-duration: 250ms;
-    border-radius: 0px;
-    box-shadow: 15px 15px 25px 0px rgba(114, 62, 138, 0.021);
-    transition-duration: 200ms;
-    transform: rotateX(-5deg) rotateY(30deg);
-    
-    img{
-        width: 100%;
-        height: 250px;
-        border-radius: 0px;
-        filter: saturate(200%) grayscale(20%);
-        box-shadow: 5px 5px 25px 0px rgba(153, 140, 140, 0);
-        object-fit: cover;
-        transition-duration: 230ms;
-        user-select: none;
-    }
-
-    &:hover{
-        background-color: $color_black;
-        border: 3px solid $color3;
-        
-        transform: rotateX(0deg) rotateY(0deg);
-        box-shadow: 15px 15px 25px 0px rgba(0,0,0,0);
-        img{
-            filter: saturate(200%) grayscale(0%);
-            box-shadow: 5px 5px 25px 0px rgba(0,0,0,0);
-        }
-        h5{
-            text-shadow: 5px 5px 10px rgba(0,0,0,0);
-            color: $colors;
+.contenedor{
+    background-color: #101010;
+    div{
+        h1{
+            color: #ffffff;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+            @include imagen-scroll-i;
         }
         p{
-            text-shadow: 5px 5px 10px  rgba(65, 57, 57, 0);
-            color: $colorp;
+            color: #cccccc;
+            font-size: 18px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+            text-align: justify;
+            @include imagen-scroll-d;
         }
     }
-    h5{
-        transition-duration: 2000ms;
-        text-shadow: 5px 5px 10px rgba(148, 138, 138, 0);
-        user-select: none;
-    }
-    p{
-        transition-duration: 2000ms;
-        user-select: none;
-        text-shadow: 5px 5px 10px  rgba(86, 41, 107, 0.219);
-    }
-    
 }
 
-#carrusel-agujeros{
-    display: flex;
-    width: 50vw;
-    height: 60vh;
-    img{
-        width: 100%;
-        height: 100%;
-    }
 
-}
-
-.Agujeros-negros{
-    
-    background-color: $color_black;
-    margin-top: 5px;
-    background-image: url(https://imgs.search.brave.com/Bj6gVLRk0n-wUw4gUcMdAOcP-xtRrG56F3VqAGKAjBI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bmF0aW9uYWxnZW9n/cmFwaGljLmNvbS5l/cy9tZWRpby8yMDIz/LzAzLzMwL2FndWpl/cm8tbmVncm9fMmQy/MjM3ZjNfMjMwMzMw/MTI1NDQzXzEyODB4/NzE4LmpwZw);  
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 0.05px;
-}
-
-.all{
-    background-color: $color_black;
+footer{
+    @include footer;
 }

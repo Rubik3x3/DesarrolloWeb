@@ -201,8 +201,13 @@ body {
 
 .contenedor {
   background-color: #101010; }
-  .contenedor div p {
+  .contenedor div h1 {
     color: #ffffff;
+    font-size: 24px;
+    margin-left: 20vw;
+    margin-right: 20vw; }
+  .contenedor div p {
+    color: #cccccc;
     font-size: 18px;
     margin-left: 20vw;
     margin-right: 20vw;

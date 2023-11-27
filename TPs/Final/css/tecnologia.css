@@ -521,3 +521,16 @@ footer {
         footer .contenedor-footer img {
           width: 100vw;
           height: 25vh; } }
+
+@media screen and (max-width: 768px) {
+  #carouselExampleIndicators img {
+    width: 100vw;
+    height: 75vh; } }
+
+@media screen and (max-width: 320px) {
+  #carouselExampleIndicators img {
+    height: 45vh; }
+  .cont-text {
+    height: 190vh; }
+    .cont-text div img {
+      width: 200px; } }
