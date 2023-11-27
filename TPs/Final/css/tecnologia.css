@@ -120,6 +120,10 @@ header nav {
       header nav ul .menu {
         display: block; } }
 
+@media screen and (max-width: 320px) {
+  header nav {
+    width: 320px; } }
+
 .contenedor-principal {
   display: flex;
   flex-flow: column nowrap;
@@ -145,7 +149,7 @@ header nav {
   @media screen and (max-width: 768px) {
     .contenedor-principal h1 {
       text-align: center;
-      font-size: 120px; } }
+      font-size: 100px; } }
 
 .contenedor {
   background-image: linear-gradient(to top, #101010, black);
@@ -504,3 +508,12 @@ footer {
           text-align: center; }
           footer .contenedor-footer #contenedor-footer__caja1 div {
             margin-top: 30px; } }
+  @media screen and (max-width: 320px) {
+    footer {
+      width: 100vw; }
+      footer .contenedor-footer {
+        height: 180vh;
+        flex-flow: column nowrap; }
+        footer .contenedor-footer img {
+          width: 100vw;
+          height: 30vh; } }

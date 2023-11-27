@@ -1,0 +1,38 @@
+@import 'elementos';
+@import 'colors';
+
+
+header{
+    @include navigation;
+}
+
+html{
+    background-color: #050505;
+}
+
+.menu_canva{
+    @include menu-canva;
+}
+
+
+.contenedor-principal{
+    @include contenedor-principal;
+}
+
+.contenedor{
+    background-color: #101010;
+    p{
+        color: #ffffff;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+}
+
+
+footer{
+    @include footer;
+}
