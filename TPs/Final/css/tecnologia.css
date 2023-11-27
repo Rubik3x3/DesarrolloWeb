@@ -532,5 +532,7 @@ footer {
     height: 45vh; }
   .cont-text {
     height: 190vh; }
-    .cont-text div img {
-      width: 200px; } }
+    .cont-text div {
+      top: 5px; }
+      .cont-text div img {
+        width: 200px; } }

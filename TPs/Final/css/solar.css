@@ -204,6 +204,8 @@ body {
     .contenedor-principal h1 {
       text-align: center;
       font-size: 50px; } }
+  .contenedor-principal img {
+    filter: brightness(50%); }
 
 .contenedor-sistema {
   background-color: #101010;

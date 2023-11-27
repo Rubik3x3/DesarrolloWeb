@@ -23,6 +23,9 @@ body{
 
 .contenedor-principal{
     @include contenedor-principal;
+    img{
+        filter: brightness(50%);
+    }
 }
 
 .contenedor-sistema{
