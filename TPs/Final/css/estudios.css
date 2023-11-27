@@ -124,7 +124,7 @@ header nav {
   header nav {
     width: 320px; } }
 
-html {
+body {
   background-color: #050505; }
 
 .menu_canva .offcanvas-header {
@@ -193,12 +193,18 @@ html {
   background-color: #101010; }
   .contenedor p {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-bottom: 50px;
-    text-align: justify; }
+    text-align: justify;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: mostrarD;
+    animation-range: entry 50% cover 35%;
+    animation-fill-mode: both; }
 
 footer {
   width: 100%;

@@ -6,7 +6,7 @@ header{
     @include navigation;
 }
 
-html{
+body{
     background-color: #050505;
 }
 
@@ -23,12 +23,13 @@ html{
     background-color: #101010;
     p{
         color: #ffffff;
-        font-size: 25px;
+        font-size: 18px;
         margin-top: 50px;
+        margin-bottom: 50px;
         margin-left: 20vw;
         margin-right: 20vw;
-        margin-bottom: 50px;
         text-align: justify;
+        @include imagen-scroll-d;
     }
 }
 
