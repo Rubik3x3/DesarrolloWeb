@@ -441,12 +441,6 @@ footer {
       height: 280px;
       align-self: center;
       justify-self: center; }
-    @media screen and (max-width: 768px) {
-      footer .contenedor-footer .contenedor-footer {
-        height: 150vh; }
-        footer .contenedor-footer .contenedor-footer img {
-          width: 680px;
-          height: 50%; } }
     footer .contenedor-footer #contenedor-footer__caja1 {
       grid-area: caja1;
       display: flex;
@@ -493,6 +487,16 @@ footer {
         margin-top: 15px;
         color: #aaa;
         font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      footer .contenedor-footer .contenedor-footer {
+        height: 150vh; }
+        footer .contenedor-footer .contenedor-footer img {
+          width: 70vw;
+          height: 200vh;
+          align-self: center;
+          justify-self: center; }
+        footer .contenedor-footer .contenedor-footer #contenedor-footer__copyright {
+          width: auto; } }
 
 @media screen and (max-width: 768px) {
   .contenedor {
