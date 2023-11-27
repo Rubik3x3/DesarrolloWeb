@@ -21,15 +21,15 @@ body{
 
 .contenedor{
     background-color: #101010;
-    p{
-        color: #ffffff;
-        font-size: 18px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 20vw;
-        margin-right: 20vw;
-        text-align: justify;
-        @include imagen-scroll-d;
+    div{
+        p{
+            color: #ffffff;
+            font-size: 18px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+            text-align: justify;
+            @include imagen-scroll-d;
+        }
     }
 }
 
