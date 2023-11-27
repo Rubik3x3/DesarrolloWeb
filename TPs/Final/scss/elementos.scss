@@ -235,16 +235,6 @@ body{
 
         @media screen and (max-width: 768px) {
             .contenedor-footer{
-                height: 150vh;
-                img{
-                    width: 70vw;
-                    height: 200vh;
-                    align-self: center;
-                    justify-self: center;
-                }
-                #contenedor-footer__copyright{
-                    width: auto;
-                }
             }
         }
     }
