@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css && node-sass --include-path scss scss/colors.scss css/colors.css && node-sass --include-path scss scss/solar.scss css/solar.css && node-sass --include-path scss scss/cuerpos.scss css/cuerpos.css && node-sass --include-path scss scss/tecnologia.scss css/tecnologia.css && node-sass --include-path scss scss/estudios.scss css/estudios.css && node-sass --include-path scss scss/elementos.scss css/elementos.css",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css && node-sass --include-path scss scss/colors.scss css/colors.css && node-sass --include-path scss scss/solar.scss css/solar.css && node-sass --include-path scss scss/cuerpos.scss css/cuerpos.css && node-sass --include-path scss scss/tecnologia.scss css/tecnologia.css && node-sass --include-path scss scss/estudios.scss css/estudios.css && node-sass --include-path scss scss/elementos.scss css/elementos.css ",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",

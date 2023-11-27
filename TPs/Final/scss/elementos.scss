@@ -212,10 +212,6 @@ body{
                     color: $color_white;
                 }
             }
-
-            .boton{
-                @include button-simple;
-            }
         }
 
         #contenedor-footer__copyright{
@@ -233,8 +229,23 @@ body{
             }
         }
 
-        @media screen and (max-width: 768px) {
-            .contenedor-footer{
+    }
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        .contenedor-footer{
+            height: 180vh;
+            flex-flow: column nowrap;
+            img{
+                width: 100vw;
+            }
+            #contenedor-footer__caja1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                div{
+                    margin-top: 30px;
+                }
             }
         }
     }
