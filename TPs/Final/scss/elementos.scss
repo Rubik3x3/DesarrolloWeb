@@ -148,6 +148,16 @@ body{
             }
         }
     }
+    
+
+    @media screen and (max-width: 320px) {
+        .offcanvas-header{
+            width: 320px;
+        }
+        .offcanvas-body{
+            width: 320px;
+        }
+    }
 }
 
 @mixin card{
@@ -261,7 +271,7 @@ body{
             flex-flow: column nowrap;
             img{
                 width: 100vw;
-                height: 30vh;
+                height: 25vh;
             }
         }
     }
@@ -297,6 +307,13 @@ body{
         h1{
             text-align: center;
             font-size: 100px;
+        }        
+    }
+
+    @media screen and (max-width: 320px) {
+        h1{
+            text-align: center;
+            font-size: 50px;
         }        
     }
 }

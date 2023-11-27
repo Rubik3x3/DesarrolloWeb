@@ -150,6 +150,10 @@ header nav {
     .contenedor-principal h1 {
       text-align: center;
       font-size: 100px; } }
+  @media screen and (max-width: 320px) {
+    .contenedor-principal h1 {
+      text-align: center;
+      font-size: 50px; } }
 
 .contenedor {
   background-image: linear-gradient(to top, #101010, black);
@@ -516,4 +520,4 @@ footer {
         flex-flow: column nowrap; }
         footer .contenedor-footer img {
           width: 100vw;
-          height: 30vh; } }
+          height: 25vh; } }

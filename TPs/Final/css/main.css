@@ -159,6 +159,12 @@ header nav {
         color: #c77dff;
         text-shadow: 0px 0px 5px #c77dff; }
 
+@media screen and (max-width: 320px) {
+  .menu_canva .offcanvas-header {
+    width: 320px; }
+  .menu_canva .offcanvas-body {
+    width: 320px; } }
+
 .contenedor-principal {
   display: flex;
   flex-flow: column nowrap;
@@ -185,6 +191,10 @@ header nav {
     .contenedor-principal h1 {
       text-align: center;
       font-size: 100px; } }
+  @media screen and (max-width: 320px) {
+    .contenedor-principal h1 {
+      text-align: center;
+      font-size: 50px; } }
 
 .contenedor {
   height: 100%;
@@ -501,7 +511,7 @@ footer {
         flex-flow: column nowrap; }
         footer .contenedor-footer img {
           width: 100vw;
-          height: 30vh; } }
+          height: 25vh; } }
 
 @media screen and (max-width: 768px) {
   .contenedor {
