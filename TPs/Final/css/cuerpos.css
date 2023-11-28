@@ -389,3 +389,23 @@ footer {
         footer .contenedor-footer img {
           width: 100vw;
           height: 25vh; } }
+
+@media screen and (max-width: 768px) {
+  .contenedor-principal h1 {
+    font-size: 64px; }
+  .contenedor div h1 {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-left: 5vw;
+    margin-right: 5vw; }
+  .contenedor div p {
+    font-size: 18px;
+    margin-left: 5vw;
+    margin-right: 5vw; }
+  .contenedor__caja1 {
+    flex-flow: column nowrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center; }
+    .contenedor__caja1 div {
+      margin-top: 15px; } }
