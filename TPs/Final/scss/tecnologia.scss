@@ -220,43 +220,17 @@ footer{
 
     #carouselExampleIndicators{
         img{
-            width: 100vw;
-            height: 50vh;
+            width: 75vw;
+            height: 100px;
         }
     }
     .cont-text{
-        p{
-            margin-bottom: 10px;
-        }
         div{
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             
             img{
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-top: 15px;
-                margin-bottom: 0px;
-                width: 100%;
-                height: 50%;
-            }
-        }
-    }
-    .cont-text__2{
-        p{
-            margin-bottom: 10px;
-        }
-        div{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            
-            img{
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-top: 15px;
-                margin-bottom: 0px;
                 width: 100%;
                 height: 50%;
             }
