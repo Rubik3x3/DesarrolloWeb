@@ -423,7 +423,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.25fr;
-    grid-template-areas: "logo" "caja1" "copyright"; }
+    grid-template-areas: "logo" "caja1" "copyright"; }
     footer .contenedor-footer img {
       grid-area: logo;
       width: 885px;
@@ -510,7 +510,7 @@ footer {
   body {
     overflow-x: hidden; }
   .contenedor-sistema__planetas {
-    font-size: 2.25px; }
+    font-size: 2.1px; }
   .contenedor-sistema {
     height: 60vh; }
   .carousel-item {
