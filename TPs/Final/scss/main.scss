@@ -284,6 +284,11 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    .contenedor-principal{
+        h1{
+            font-size: 64px;
+        }
+    }
     .contenedor{
         margin-top: 50%;
         .contenedor__caja1{
@@ -327,6 +332,11 @@ footer{
 }
 
 @media screen and (max-width: 320px) {
+    .contenedor-principal{
+        h1{
+            font-size: 32px;
+        }
+    }
     .contenedor{
         margin-top: 50%;
         .contenedor__caja1{
