@@ -124,6 +124,47 @@ header nav {
   header nav {
     width: 320px; } }
 
+.menu_canva .offcanvas-header {
+  background-color: #151515; }
+
+.menu_canva .offcanvas-body {
+  background-color: #151515; }
+  .menu_canva .offcanvas-body ul li {
+    list-style: none;
+    padding: 20px; }
+    .menu_canva .offcanvas-body ul li a {
+      border-radius: 1px;
+      font-size: 24px;
+      color: #ffffff;
+      padding: 10px;
+      position: relative;
+      text-decoration: none;
+      transition-duration: 300ms; }
+      .menu_canva .offcanvas-body ul li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #9d4edd;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out; }
+      .menu_canva .offcanvas-body ul li a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1); }
+      .menu_canva .offcanvas-body ul li a:hover {
+        color: #c77dff;
+        text-shadow: 0px 0px 5px #c77dff; }
+
+@media screen and (max-width: 320px) {
+  .menu_canva .offcanvas-header {
+    width: 320px; }
+  .menu_canva .offcanvas-body {
+    width: 320px; } }
+
 .contenedor-principal {
   display: flex;
   flex-flow: column nowrap;
@@ -525,7 +566,29 @@ footer {
 @media screen and (max-width: 768px) {
   #carouselExampleIndicators img {
     width: 100vw;
-    height: 75vh; } }
+    height: 50vh; }
+  .cont-text div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .cont-text div img {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      width: 100%;
+      height: 50%; }
+  .cont-text__2 div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    .cont-text__2 div img {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      width: 100%;
+      height: 50%; } }
 
 @media screen and (max-width: 320px) {
   #carouselExampleIndicators img {
