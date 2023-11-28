@@ -225,6 +225,9 @@ footer{
         }
     }
     .cont-text{
+        p{
+            margin-bottom: 10px;
+        }
         div{
             display: flex;
             flex-flow: column nowrap;
@@ -241,6 +244,9 @@ footer{
         }
     }
     .cont-text__2{
+        p{
+            margin-bottom: 10px;
+        }
         div{
             display: flex;
             flex-flow: column nowrap;
